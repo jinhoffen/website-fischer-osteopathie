@@ -22,7 +22,7 @@ jobs:
           bundler-cache: true # runs 'bundle install' and caches installed gems automatically
       - name: Build Site with Jekyll (production)
         if: github.ref == 'refs/heads/main'
-        run: bundle exec jekyll build -t --config "_config.yml,_config.prod.yml"
+        run: JEKYLL_ENV=production bundle exec jekyll build -t --config "_config.yml,_config.prod.yml"
       - name: Build Site with Jekyll (development)
         if: github.event_name == 'pull_request'
         run: bundle exec jekyll build -t --config "_config.yml,_config.prod.yml"
