@@ -1,0 +1,23 @@
+# Jekyll
+_site
+.sass-cache
+Gemfile.lock
+.jekyll-cache
+
+# OSX
+.DS_Store
+
+# VSCode
+.vscode
+
+# Node JS modules
+node_modules/
+
+# Firebase cache
+.firebase/
+firebase-debug.log
+
+# internal docs
+backup/
+resources/
+ACCOUNTS.md

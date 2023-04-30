@@ -1,0 +1,54 @@
+# site settings
+title: Annika Fischer
+landing_page_title: Praxis für Osteopathie
+seo_landing_page_title: Annika Fischer | Praxis für Osteopathie & Kinderosteopathie
+seo_landing_page_description: Osteopathische Behandlung für Erwachsene, Kinder & Babys in Berlin Mitte & Steglitz. Osteopathie MSc, Heilpraktikerin, Mitglied im Osteopathieverband VfO.
+baseurl: ""
+url: "https://www.fischer-osteopathie.de"
+timezone: Europe/Berlin
+lang: de_DE
+lang_only: de
+theme_color: "#18202a"
+
+# build settings
+markdown: kramdown
+
+# page settings
+sass:
+  style: compressed
+
+google_maps:
+  api_key: process.env.GOOGLE_MAPS_API_KEY
+
+google_analytics:
+    id: G-MB0KKHMR3K
+    anonymizeIp: true
+
+# plugins
+plugins:
+  - jekyll-maps
+  - jekyll-analytics
+  - jekyll-smartify
+  - jekyll_version_plugin
+  - jekyll-minifier
+  - jekyll-webp
+  - jekyll-last-modified-at
+  - jekyll-sitemap
+
+jekyll-minifier:
+  remove_comments: true
+  # javascript: esr6
+  uglifier_args:
+    harmony: true
+
+webp:
+  enabled: true
+  quality: 80
+  img_dir: ["/images"]
+  formats: [".jpeg", ".jpg"]
+  gifs: [".gif"]
+  regenerate: false
+  exclude: [".webp"]
+
+# exclude from build
+exclude: ["Gemfile", "node_modules", "vendor", "backup", "README.md", "firebase.json", "package.json", "package-lock.json", "fonts/selection.json"]
