@@ -17,13 +17,6 @@ markdown: kramdown
 sass:
   style: compressed
 
-google_maps:
-  api_key: process.env.GOOGLE_MAPS_API_KEY
-
-google_analytics:
-    id: G-MB0KKHMR3K
-    anonymizeIp: true
-
 # plugins
 plugins:
   - jekyll-maps
@@ -36,10 +29,7 @@ plugins:
   - jekyll-sitemap
 
 jekyll-minifier:
-  remove_comments: true
-  # javascript: esr6
-  uglifier_args:
-    harmony: true
+  exclude: '**.*'
 
 webp:
   enabled: true
@@ -48,7 +38,7 @@ webp:
   formats: [".jpeg", ".jpg"]
   gifs: [".gif"]
   regenerate: false
-  exclude: [".webp"]
+  exclude: ["banner.jpg", ".webp"]
 
 # exclude from build
 exclude: ["Gemfile", "node_modules", "vendor", "backup", "README.md", "firebase.json", "package.json", "package-lock.json", "fonts/selection.json"]
