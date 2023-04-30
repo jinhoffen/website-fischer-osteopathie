@@ -85,7 +85,7 @@ You should be able to run jekyll now with
 
 With this command a development web-server will be started on [http://localhost:4000](http://localhost:4000)
 
-    bundle exec jekyll serve --livereload
+    bundle exec jekyll serve -t --livereload --config "_config.yml,_config.dev.yml"
 
 For more info see the [quick-start section](https://jekyllrb.com/docs/quickstart/) in the Jekyll docs.
 
@@ -93,7 +93,7 @@ For more info see the [quick-start section](https://jekyllrb.com/docs/quickstart
 
 With the following command the website will be built and exported to `_site`
 
-    bundle exec jekyll build
+    bundle exec jekyll build -t --config "_config.yml,_config.dev.yml"
 
 ## Continuous Deployment
 
