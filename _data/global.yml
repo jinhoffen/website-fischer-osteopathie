@@ -1,0 +1,84 @@
+owner: Praxis für Osteopathie Annika Fischer
+first_published: 2020
+organization:
+  founded_iso8601: '2020-01-01'
+  acceptNewPatients: 'True'
+contact:
+  name: MSc Annika Fischer
+  email: info@fischer-osteopathie.de
+  tel: +49 30 20288435
+  doctolib: https://www.doctolib.de/osteopath/berlin/annika-fischer-berlin
+  hours:
+    monday:
+      start: '10:00'
+      end: '19:00'
+    tuesday:
+      start: '10:00'
+      end: '18:00'
+    wednesday:
+      start: '08:45'
+      end: '13:30'
+    thursday:
+      start: '14:30'
+      end: '20:15'
+    friday:
+      start: '10:00'
+      end: '17:00'
+    saturday:
+      start: '10:00'
+      end: '14:30'
+  praxis_berlin_steglitz:
+    name: GLO Praxis für Osteopathie
+    tel: +49 30 52286269
+    mobile: +49 163 7835432
+    email: info@osteopathie-glo.de
+    location: Berlin - Steglitz
+    line1: Feuerbachstraße 53
+    line2: 12163 Berlin
+    line3: Deutschland
+    postal_code: 12163
+    country_code: DE
+    city_en: Berlin
+    maps: https://goo.gl/maps/oD2S9q3NGnZeUzPH9
+    lat: 52.468634328057306
+    long: 13.337380884123771
+    url: https://www.osteopathie-glo.de
+    hours:
+      monday:
+        start: '10:00'
+        end: '19:00'
+      tuesday:
+        start: '10:00'
+        end: '18:00'
+      friday:
+        start: '10:00'
+        end: '17:00'
+  praxis_berlin_mitte:
+    name: Osteopathie Berlin Mitte
+    mobile: +49 176 56674254
+    email: remi.boisserie@isosteo.com
+    location: Berlin - Mitte
+    line1: Friedrichstraße 133
+    line2: 10117 Berlin
+    line3: Deutschland
+    postal_code: 10117
+    country_code: DE
+    city_en: Berlin
+    maps: https://goo.gl/maps/eMvnED9NvqaWSk4t9
+    lat: 52.52597829363047
+    long: 13.38697191572894
+    url: https://www.osteopathie-berlin-mitte.com
+    hours:  
+      wednesday:
+        start: '08:45'
+        end: '13:30'
+      thursday:
+        start: '14:30'
+        end: '20:15'
+      saturday:
+        start: '10:00'
+        end: '14:30'
+social:
+  email: info@fischer-osteopathie.de
+  # google: https://g.page/r/Ca8DRzoCzjsCEBM/review # google company profile
+  google: https://goo.gl/maps/zHWjnCezVUTavMmC7

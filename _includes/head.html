@@ -1,0 +1,28 @@
+<head>
+	<meta charset="utf-8" >
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ '/images/favicon-32x32.png' | prepend: site.baseurl }}">
+    <link rel="icon" type="image/png" sizes="96x96" href="{{ '/images/favicon-96x96.png' | prepend: site.baseurl }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ '/images/favicon-16x16.png' | prepend: site.baseurl }}">
+	<!-- theme css-->
+	<link rel="stylesheet" href="{{ '/css/main.css' | prepend: site.baseurl | sass_cache_bust }}">
+	<noscript><link rel="stylesheet" href="{{ '/css/noscript.css' | prepend: site.baseurl | sass_cache_bust }}" ></noscript>
+	{% if jekyll.environment == 'production' %}
+	<!-- <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css"/> -->
+	<link rel="stylesheet" type="text/css" href="{{ '/css/cookieconsent.css' | prepend: site.baseurl | css_cache_bust }}"/>
+	{% endif %}
+	<!-- seo -->
+	{% capture seo %}{% include seo.html %}{% endcapture %}
+    {{ seo | strip_newlines | replace: "            ", " " | replace: "        ", " " | replace: "    ", " " }}
+	<!-- javascript -->
+	{% if jekyll.environment == 'production' %}
+	<!-- Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics.id }}"></script>
+	{% endif %}
+	<!-- indexing -->
+	{% if jekyll.environment == "production" %}
+	<meta name="robots" content="index,follow">
+	{% else %}
+	<meta name="robots" content="noindex">
+	{% endif %}
+</head>

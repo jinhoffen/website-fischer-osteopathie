@@ -1,0 +1,160 @@
+---
+layout: landing
+permalink: /index.html
+page_header: Annika Fischer
+internal_id: index
+---
+
+<!-- Banner -->
+<section id="banner">
+    <div class="inner">
+        <h2>
+            {{ page.page_header }}
+        </h2>
+        <p>
+            {{ site.landing_page_title }}
+        </p>
+    </div>
+</section>
+
+<!-- Contact -->
+<section id="one" class="wrapper style1 special">
+    <div class="inner">
+        <header class="major">
+            <h2>Kontakt</h2>
+            <p>
+                Ich bin als freie Mitarbeiterin in zwei <a href="#standorte" class="scrolly">Osteopathie-Praxen</a> tätig.<br>
+                Termine können Sie bei mir telefonisch, per E-Mail, über Doctolib oder über die Praxis-Websites buchen.
+            </p>
+            <ul class="none">
+                <li>Tel {{ site.data.global.contact.tel | tel_link }}</li>
+                <li>E-Mail <a href="mailto:{{ site.data.global.contact.email }}">{{ site.data.global.contact.email }}</a></li>
+            </ul>
+            <p><a target="_blank" rel="noopener" href="{{ site.data.global.contact.doctolib }}" class="button primary">Doctolib</a></p>
+            <p>
+                Ich spreche fließend deutsch und englisch und verstehe Sie auch auf französisch.
+            </p>
+            <!--<button type="button" class="btn" id="btn-revokeChoice">Revoke choice</button>-->
+        </header>
+    </div>
+</section>
+
+<!-- Locations -->
+<section id="standorte" class="wrapper style3 special">
+    <div class="inner">
+        <header class="major">
+            <h2>Standorte</h2>
+            <ul class="features">
+                <li class="practice">
+                    <h4>{{ site.data.global.contact.praxis_berlin_steglitz.location }}</h4>
+                    <p>
+                        <a target="_blank" rel="noopener" href='{{ site.data.global.contact.praxis_berlin_steglitz.maps }}' aria-label="Zeige Karte von {{ site.data.global.contact.praxis_berlin_steglitz.name }}"><i class="icon-map" aria-hidden="true"></i></a>
+                        {{ site.data.global.contact.praxis_berlin_steglitz.name }}
+                        <br>
+                        {{ site.data.global.contact.praxis_berlin_steglitz.line1 }}<br>
+                        {{ site.data.global.contact.praxis_berlin_steglitz.line2 }}
+                    </p>
+                    <p><a target="_blank" rel="noopener" href="{{ site.data.global.contact.praxis_berlin_steglitz.url }}" class="button booking">Termin buchen</a></p>
+                    <h5>Behandlungszeiten</h5>
+                    <p>
+                        <strong>Montag</strong> {{ site.data.global.contact.praxis_berlin_steglitz.hours.monday.start }} bis {{ site.data.global.contact.praxis_berlin_steglitz.hours.monday.end }} Uhr<br/>
+                        <strong>Dienstag</strong> {{ site.data.global.contact.praxis_berlin_steglitz.hours.tuesday.start }} bis {{ site.data.global.contact.praxis_berlin_steglitz.hours.tuesday.end }} Uhr<br/>
+                        <strong>Freitag</strong> {{ site.data.global.contact.praxis_berlin_steglitz.hours.friday.start }} bis {{ site.data.global.contact.praxis_berlin_steglitz.hours.friday.end }} Uhr<br/>
+                    </p>
+                </li>
+                <li class="practice">
+                    <h4>{{ site.data.global.contact.praxis_berlin_mitte.location }}</h4>
+                    <p>
+                        <a target="_blank" rel="noopener" class="simple" href='{{ site.data.global.contact.praxis_berlin_mitte.maps }}' aria-label="Zeige Karte von {{ site.data.global.contact.praxis_berlin_mitte.name }}"><i class="icon-map" aria-hidden="true"></i></a>
+                        {{ site.data.global.contact.praxis_berlin_mitte.name }}<br>
+                        {{ site.data.global.contact.praxis_berlin_mitte.line1 }}<br>
+                        {{ site.data.global.contact.praxis_berlin_mitte.line2 }}
+                    </p>
+                    <p><a target="_blank" rel="noopener" href="{{ site.data.global.contact.praxis_berlin_mitte.url }}" class="button booking">Termin buchen</a></p>
+                    <h5>Behandlungszeiten</h5>
+                    <p>
+                        <strong>Mittwoch</strong> {{ site.data.global.contact.praxis_berlin_mitte.hours.wednesday.start }} bis {{ site.data.global.contact.praxis_berlin_mitte.hours.wednesday.end }} Uhr<br/>
+                        <strong>Donnerstag</strong> {{ site.data.global.contact.praxis_berlin_mitte.hours.thursday.start }} bis {{ site.data.global.contact.praxis_berlin_mitte.hours.thursday.end }} Uhr<br/>
+                        <strong>Samstag</strong> {{ site.data.global.contact.praxis_berlin_mitte.hours.saturday.start }} bis {{ site.data.global.contact.praxis_berlin_mitte.hours.saturday.end }} Uhr<br/>
+                    </p>
+                </li>
+            </ul>
+        </header>
+        <div id="map"></div>
+    </div>
+</section>
+
+<!-- CTA
+<section id="cta" class="wrapper style4">
+    <div class="inner">
+        <header>
+            <h2>Muh</h2>
+        </header>
+    </div>
+</section>
+-->
+
+
+<!-- Qualification -->
+<section id="three" class="wrapper style5 special">
+    <div class="inner">
+        <header class="major">
+            <h2>Qualifikation</h2>
+            <ul class="features">
+                <li>
+                    <h4>M.Sc. in Osteopathie</h4>
+                    <p>
+                        1-jähriges Vollzeitstudium<br>
+                        <a target="_blank" href="https://osteopathie-schule.de">Osteopathie Schule Deutschland</a> (OSD) und Universität Dresden (DIU)
+                    </p>
+                </li>
+                <li>
+                    <h4>B.Sc. in Osteopathie</h4>
+                    <p>
+                        4-jähriges Vollzeitstudium<br>
+                        <a target="_blank" href="https://osteopathie-schule.de">Osteopathie Schule Deutschland</a> (OSD) und Universität Dresden (DIU)
+                    </p>
+                </li>
+                <li>
+                    <h4>Heilpraktiker</h4>
+                    <p>Zulassung erteilt vom Gesundheitsamt Karlsruhe</p>
+                </li>
+                <li>
+                    <h4>Regelmäßige Fortbildungen</h4>
+                    <ul class="flist">
+                        <li><a target="_blank" href="https://osteopathie-institut-frankfurt.de/kurse/integrative-kinderosteopathie/">Kinder- und Säuglingsosteopathieausbildung</a> am Osteopathie-Institut Frankfurt</li>
+                        <li><a target="_blank" href="https://lmosteo.com/de/was-ist-lmo">Mechanical Link LMO nach Paul Chauffour</a> (4/6 Modulen abgeschlossen)</li>
+                    </ul>
+                </li>
+                <li class="icon iconfont-utensils">
+                    <h4>Verbandszugehörigkeit</h4>
+                    <p>Zertifiziertes Mitglied im <a href="https://www.vfo.de/">Verband freier Osteopathen (VfO)</a></p>
+                </li>
+            </ul>
+        </header>
+    </div>
+</section>
+
+<!-- Background Image -->
+<section id="three" class="wrapper" style="height:500px;">
+
+</section>
+
+<!-- About Me -->
+<section id="three" class="wrapper style5 special">
+    <div class="inner">
+        <header class="major">
+            <h2>Über mich</h2>
+            <p >
+                Die Wirkungsweise der Osteopathie am eigenen Körper erfahren zu haben und mein generelles Interesse an der Gesundung des Menschen, brachten mich zu meinem Beruf als Osteopathin.<br>
+                Das bin ich mit Leib und Seele und noch immer begeistert mich die Kombination vom Erkennen anatomischer und physiologischer Zusammenhänge, einer wissenschaftlichen Herangehensweise, dem Kontakt mit Patienten und dem direkten Arbeiten und Erspüren mit den Händen.
+            </p>
+            <p>
+                In der präzisen Diagnostik und Therapie werden sowohl die strukturellen körperlichen als auch die emotionalen und ernährungsphysiologischen Einflüsse auf den Körper berücksichtigt.<br>
+                Sie als Patient stehen mit Ihrem individuellen Anliegen im Mittelpunkt und mein Ziel ist es, Sie dabei zu unterstützen wieder in ein gesundes Gleichgewicht zu gelangen, sodass der Körper alle Voraussetzungen hat, sich selbst zu regulieren.<br>
+                Dafür bietet die Osteopathie ein breites Spektrum an Behandlungsansätzen und kann sowohl in akuten und chronischen Fällen als auch präventiv eingesetzt werden.
+            </p>
+            <p>Um meine Behandlungstechniken und mein Wissen zu erweitern, nehme ich regelmäßig an Fort- und Weiterbildungen teil.</p>
+        </header>
+    </div>
+</section>
