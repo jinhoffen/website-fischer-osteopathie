@@ -17,6 +17,9 @@ markdown: kramdown
 sass:
   style: compressed
 
+google_analytics:
+    id: G-MB0KKHMR3K
+
 # plugins
 plugins:
   - jekyll-maps

@@ -2,10 +2,6 @@
 google_maps:
   api_key: AIzaSyDYWvfrxPPJpOnTyKWrjr0iSgOwVOV-Ssw
 
-google_analytics:
-    id: G-MB0KKHMR3K
-    anonymizeIp: true
-
 # plugin settings for production
 jekyll-minifier:
   exclude: "**.css"
