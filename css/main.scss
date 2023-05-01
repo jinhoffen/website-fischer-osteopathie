@@ -2035,40 +2035,23 @@ $baseurl: '#{$site_baseurl}/images';
 
 /* Custom: Google Maps */
 
-#map {
+#googlemaps {
 	width: 100%;
 	height: 40vw;
 	max-height: 400px;
 	min-height: 300px;
-	display: none;
 }
 
-/* Custom: Cookie Constent */
-
-#cookie-notice {
-	padding: 0.5rem 1rem; 
-	display: none; text-align: center; 
-	position: fixed; 
-	bottom: 0; 
-	width: 100%; 
-	background: #222; 
-	color: rgba(255,255,255,0.8);
-}
-#cookie-notice a {
+#googlemaps img {
+	width:100%;
+    height:100%;
+    object-fit: cover;
+    overflow: hidden;
 	display: inline-block;
-	cursor: pointer;
-	margin-left: 0.5rem;
 }
-@media all and (max-width: 767px) {
-	#cookie-notice span {
-		display: block;
-		padding-top: 3px;
-		margin-bottom: 1rem;
-	}
-	#cookie-notice a {
-		position: relative;
-		bottom: 4px;
-	}
+
+#googlemaps small {
+	font-size: 8px;
 }
 
 /* Custom: Two Practices */

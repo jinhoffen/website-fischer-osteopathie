@@ -1,8 +1,13 @@
 <!-- theme -->
 <script src="{{ '/js/scripts.js' | prepend: site.baseurl | js_cache_bust }}"></script>
 <!-- cookie consent -->
-<script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
-<!-- Google maps -->
-<!-- <script src="https://maps.googleapis.com/maps/api/js?key={{ site.google_maps.api_key }}&callback=initMap" async defer></script> -->
-<!-- cookie consent -->
-<script src="{{ '/js/cookie_consent.js' | prepend: site.baseurl | js_cache_bust }}"></script>
+<script defer src="{{ '/js/cookieconsent.js' | prepend: site.baseurl }}"></script>
+<script defer src="{{ '/js/cookieconsent_init.js' | prepend: site.baseurl }}"></script>
+<script type="text/plain" data-cookiecategory="analytics">
+  console.log('analytics enabled!');
+</script>
+<!-- Google Tag Manager -->
+<script type="text/plain" data-cookiecategory="analytics" src="{{ '/js/google_tag_manager.js' | prepend: site.baseurl | js_cache_bust }}"></script>
+<!-- Google Maps -->
+<script type="text/plain" data-cookiecategory="analytics" src="{{ '/js/google_maps.js' | prepend: site.baseurl | js_cache_bust }}"></script>
+<script type="text/plain" data-cookiecategory="analytics" src="https://maps.googleapis.com/maps/api/js?key={{ site.google_maps.api_key }}&callback=initMap&libraries=&v=weekly"></script>

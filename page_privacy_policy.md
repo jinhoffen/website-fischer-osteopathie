@@ -9,6 +9,8 @@ order: 98
 name : Praxis für Osteopathie
 ---
 
+<button type="button" data-cc="c-settings">Cookie Präferenzen bearbeiten</button>
+
 Verantwortlicher im Sinne der Datenschutzgesetze, insbesondere der EU-Datenschutzgrundverordnung (DSGVO), ist:
 
 Annika Fischer
@@ -84,12 +86,6 @@ Der Zweck der Verwendung technisch notwendiger Cookies ist, die Nutzung von Webs
 Einige Funktionen unserer Internetseite können ohne den Einsatz von Cookies nicht angeboten werden.
 Für diese ist es erforderlich, dass der Browser auch nach einem Seitenwechsel wiedererkannt wird.
 
-Für folgende Anwendungen benötigen wir Cookies:
-
-| Name                  | Quelle                          | Ablaufzeit | Zweck                                                                   |
-|-----------------------|---------------------------------|--------------------------------------------------------------------------------------|
-| cookieconsent_status  | [Osano](https://www.osano.com)  | 1 Jahr     | Nachverfolgung der Einwilligung zur Nutzung nicht-essentieller Cookies  |
-
 #### Rechtsgrundlage und berechtigtes Interesse
 
 Die Verarbeitung erfolgt gemäß Art. 6 Abs. 1 lit. f DSGVO auf Basis unseres berechtigten Interesses an einer nutzerfreundlichen Gestaltung unserer Website.
@@ -112,14 +108,7 @@ Lesen Sie dazu die Informationen über Ihr Widerspruchsrecht nach Art. 21 DSGVO 
 
 Des Weiteren setzen wir Cookies ein, um das Angebot auf unserer Website besser auf die Interessen unserer Besucher abzustimmen oder auf Basis statistischer Auswertungen allgemein zu verbessern.
 
-Wir setzen folgende nicht notwendige Cookies für die unter Abschnitt [Anwendungen](#anwendungen) aufgelistete Anwendungen.
-
-| Name                   | Quelle                                                              | Ablaufzeit | Zweck                                     |
-|------------------------|---------------------------------------------------------------------|------------|-------------------------------------------|
-| \_ga                   | [Google](https://policies.google.com/technologies/cookies?hl=de)    | 2 Jahre    | Dient zur Unterscheidung zwischen Nutzern |
-| \_ga\_\<container id\> | [Google](https://policies.google.com/technologies/cookies?hl=de)    | 2 Jahre    | Dient zur Speicherung des Sitzungsstatus  |
-| NID                    | [Google](https://policies.google.com/technologies/cookies?hl=de)    | 6 Monate   | Personalisierung                          |
-
+Wir setzen nicht notwendige Cookies für die unter Abschnitt [Anwendungen](#anwendungen) aufgelisteten Anwendungen.
 
 #### Rechtsgrundlage
 
@@ -235,4 +224,10 @@ Für Ihren erneuten Besuch gilt dann die neue Datenschutzerklärung.
 
 Wenn Sie Fragen zum Datenschutz haben, schreiben Sie uns bitte eine E-Mail.
 
-Die Datenschutzerklärung basiert auf einer Vorlage der <a href="https://www.activemind.de/datenschutz/datenschutzbeauftragter/" target="_blank" rel="noopener">activeMind AG</a> (Version #2020-09-30).
+-----------
+
+<small>
+    Die Datenschutzerklärung basiert auf einer Vorlage der <a href="https://www.activemind.de/datenschutz/datenschutzbeauftragter/" target="_blank" rel="noopener">activeMind AG</a> (Version #2020-09-30).
+</small>
+
+
