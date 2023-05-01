@@ -172,7 +172,7 @@ Damit wird die Erfassung durch Google Analytics für diese Website und für dies
 
 Sie können darüber hinaus die Speicherung der Cookies durch eine entsprechende Einstellung Ihrer Browser-Software verhindern; wir weisen Sie jedoch darauf hin, dass Sie in diesem Fall gegebenenfalls nicht sämtliche Funktionen dieser Website vollumfänglich werden nutzen können. 
 
-Sie können darüber hinaus die Erfassung der durch das Cookie erzeugten und auf Ihre Nutzung der Webseite bezogenen Daten (inkl. Ihrer IP-Adresse) an Google sowie die Verarbeitung dieser Daten durch Google verhindern, indem Sie <a href="http://tools.google.com/dlpage/gaoptout?hl=de" rel="noopener" target="_blank">ein Browser-Plugin </a> herunterladen und installieren.
+Sie können darüber hinaus die Erfassung der durch das Cookie erzeugten und auf Ihre Nutzung der Webseite bezogenen Daten (inkl. Ihrer IP-Adresse) an Google sowie die Verarbeitung dieser Daten durch Google verhindern, indem Sie <a href="https://tools.google.com/dlpage/gaoptout?hl=de" rel="noopener" target="_blank">ein Browser-Plugin </a> herunterladen und installieren.
 
 ### Google Webfonts
 

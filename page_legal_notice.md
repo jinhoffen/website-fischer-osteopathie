@@ -23,7 +23,7 @@ Heilpraktikerin
 *Kontakt*:\\
 Tel {{ site.data.global.contact.tel | tel_link }}\\
 E-Mail <a href="mailto:{{ site.data.global.contact.email }}">{{ site.data.global.contact.email }}</a>\\
-Website: <a href="mailto:{{ site.url }}">{{ site.url }}</a>
+Website: <a href="{{ site.url }}">{{ site.url }}</a>
 
 *Berufshaftpflichtversicherung*:\\
 Continentale Sachversicherung AG\\
@@ -31,7 +31,7 @@ Ruhrallee 92\\
 44139 Dortmund
 
 *Aufsichtsbehörde*:\\
-<a href="https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/aemter/gesundheitsamt/">Gesundheitsamt Tempelhof-Schöneberg</a>\\
+<a href="https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/aemter/gesundheitsamt/" rel="noopener" target="_blank">Gesundheitsamt Tempelhof-Schöneberg</a>\\
 Fehrbelliner Platz 1\\
 10707 Berlin
 
@@ -67,7 +67,7 @@ Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Inhalte umgehend e
 {% endcapture %}
 
 <small>
-    Diese Website mit Version <a href="https://github.com/jinhoffen/website-osteopathie-fischer/releases/tag/{% project_version %}" rel="noopener" class="external">{% project_version %}</a> wurde zuletzt am {{ date }} mit <a href="https://jekyllrb.com" rel="noopener" class="external">Jekyll</a> kompiliert.
+    Diese Website mit Version {% project_version %} wurde zuletzt am {{ date }} mit <a href="https://jekyllrb.com" rel="noopener" class="external">Jekyll</a> kompiliert.
     Das Layout basiert auf der Vorlage <em>Spectral</em> von <a href="https://html5up.net" rel="noopener" class="external">HTML5 UP</a>.
     Das Favoriten-Symbol wurde erstellt von <a href="https://icons8.com/" rel="noopener" class="external">Icons8</a>.
     Das Impressum wurde zuletzt geändert am {{ site.last_change.legal }}.
