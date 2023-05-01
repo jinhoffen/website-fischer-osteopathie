@@ -22,8 +22,6 @@ google_analytics:
 
 # plugins
 plugins:
-  - jekyll-maps
-  - jekyll-analytics
   - jekyll-smartify
   - jekyll_version_plugin
   - jekyll-minifier
