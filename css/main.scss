@@ -1035,35 +1035,16 @@ $baseurl: '#{$site_baseurl}/images';
 			width: 50%;
 
 			@for $i from 1 through _misc(max-features) {
-				//$j: 0.035 * $i;
 				$j: 0.09 * $i;
 
 				&:nth-child(#{$i}) {
-					//background-color: rgba(0,0,0, $j);
 					background-color: rgba(114,33,41,$j);
 				}
 			}
 
 			&:nth-child(#{5}) {
 				background-color: rgba(114,33,41,0.15);
-			}
-
-			// &:nth-child(#{1}) {
-			// 	background-color: rgba(114,33,41,0.5);
-			// }
-			// &:nth-child(#{2}) {
-			// 	background-color: rgba(114,33,41,0.5);
-			// }
-			// &:nth-child(#{3}) {
-			// 	background-color: rgba(114,33,41,0.25);
-			// }
-			// &:nth-child(#{4}) {
-			// 	background-color: rgba(114,33,41,0.25);
-			// }
-			// &:nth-child(#{5}) {
-			// 	background-color: rgba(114,33,41,0.15);
-			// }
-			
+			}			
 
 			&:before {
 				display: block;
@@ -1120,15 +1101,6 @@ $baseurl: '#{$site_baseurl}/images';
 			h5 {
 				font-weight:normal;
 			}
-		}
-
-		ul.flist,
-		ul.flist li,
-		ul.flist ul li {
-			all: revert;
-			padding:0;
-			list-style-type: disc;
-			left: 1.75em;
 		}
 
 	}
@@ -1866,6 +1838,15 @@ $baseurl: '#{$site_baseurl}/images';
 			background-repeat: no-repeat;
 			background-size: cover;
 			text-align: center;
+
+			&.alt {
+				@include padding(8em, 0);
+				@include vendor('background-image', ('linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5))', 'url("#{$baseurl}/banner_blurred.jpg")'));
+				@media print {
+				  @include padding(2em, 0);
+				  background: _palette(bg) none;
+				}
+			  }
 
 			h2 {
 				font-size: 1.75em;
