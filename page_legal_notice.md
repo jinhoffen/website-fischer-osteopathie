@@ -7,10 +7,6 @@ internal_id: legal
 order: 99
 ---
 
-<!-- 
-https://www.bmuv.de/themen/verbraucherschutz-im-bmuv/digitaler-verbraucherschutz/impressumspflicht
--->
-
 ### Verantwortliche für diese Website
 
 Annika Fischer\\
@@ -51,11 +47,10 @@ Unser Angebot enthält Links zu externen Webseiten Dritter, auf deren Inhalte wi
 #### Urheberrecht
 Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers. Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet. Soweit die Inhalte auf dieser Seite nicht vom Betreiber erstellt wurden, werden die Urheberrechte Dritter beachtet. Insbesondere werden Inhalte Dritter als solche gekennzeichnet. Sollten Sie trotzdem auf eine Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Inhalte umgehend entfernen.
 
-
-<!--
 -----------
 
 <small>
-    Die Website mit Version <a href="https://github.com/patrickfav/website-dr-sel/releases/tag/{% project_version %}" rel="noopener" class="external">{% project_version %}</a> wurde am _{{ site.time | date_to_rfc822 }}_ mit {{ 'https://jekyllrb.com' | external_link: 'Jekyll' }} kompiliert.
+    Diese Website mit Version <a href="https://github.com/jinhoffen/website-osteopathie-fischer/releases/tag/{% project_version %}" rel="noopener" class="external">{% project_version %}</a> wurde am {{ site.time | date: "%-d. %B %Y" }} mit <a href="https://jekyllrb.com" rel="noopener" class="external">Jekyll</a> kompiliert.
+    Das Layout basiert auf der Vorlage <em>Spectral</em> von <a href="https://html5up.net" rel="noopener" class="external">HTML5 UP</a>.
+    Das Favoriten-Symbol wurde erstellt von <a href="https://icons8.com/" rel="noopener" class="external">Icons8</a>.
 </small>
--->
