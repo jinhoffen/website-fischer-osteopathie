@@ -17,10 +17,11 @@ markdown: kramdown
 sass:
   style: compressed
 
+google_analytics:
+    id: G-MB0KKHMR3K
+
 # plugins
 plugins:
-  - jekyll-maps
-  - jekyll-analytics
   - jekyll-smartify
   - jekyll_version_plugin
   - jekyll-minifier

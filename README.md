@@ -4,7 +4,7 @@
 
 This repo contains the source code for the static website of Annika Fischer's osteopathy practice.
 It is generated using [Jekyll](https://jekyllrb.com).
-The website is based on the Spectral template by [HTML5 UP](https://html5up.net) licensed under the CCA 3.0.
+The website is based on the Spectral template by [HTML5 UP](https://html5up.net) licensed under the [CCA 3.0](https://html5up.net/license).
 
 Table of Contents:
 
@@ -108,16 +108,15 @@ Note that the main branch is protected in GitHub and only allows merges through 
 
 * [HTML5 UP's Spectral Theme](https://github.com/arkadianriver/spectral)
 * [Jekyll](https://jekyllrb.com/) with plugins:
-  * [Maps](https://github.com/ayastreb/jekyll-maps)
   * [Last-Modified](https://github.com/gjtorikian/jekyll-last-modified-at)
   * [Sitemap](https://github.com/jekyll/jekyll-sitemap)
-  * [Analytics](https://github.com/hendrikschneider/jekyll-analytics)
   * [Version](https://github.com/rob-murray/jekyll-version-plugin)
   * [Minifier](https://github.com/digitalsparky/jekyll-minifier)
   * [Webp](https://github.com/sverrirs/jekyll-webp)
   * [Jquery 3.3.1](https://jquery.com/)
   * [Scrolly](https://github.com/Victa/scrolly)
   * [Scrollex](https://github.com/ajlkn/jquery.scrollex)
+  * [Cookie Consent](https://github.com/orestbida/cookieconsent)
 * [Font Awesome 5](https://fontawesome.com/) packaged via [Iconmoon](https://icomoon.io)
 * [Firebase Hosting](https://firebase.google.com/docs/hosting/)
 * [Cookie Consent](https://www.osano.com/cookieconsent)
