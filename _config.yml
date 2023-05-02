@@ -9,6 +9,10 @@ timezone: Europe/Berlin
 lang: de_DE
 lang_only: de
 theme_color: "#18202a"
+last_change:
+  privacy_policy: "2. Mai 2023"
+  legal: "2. Mai 2023"
+  
 
 # build settings
 markdown: kramdown

@@ -16,6 +16,7 @@ Table of Contents:
     - [Build Site](#build-site)
   - [Continuous Deployment](#continuous-deployment)
   - [Frameworks](#frameworks)
+  - [License](#license)
 
 ## Build
 
@@ -121,3 +122,7 @@ Note that the main branch is protected in GitHub and only allows merges through 
 * [Firebase Hosting](https://firebase.google.com/docs/hosting/)
 * [Cookie Consent](https://www.osano.com/cookieconsent)
 * [GitHub and GitHub Actions](https://www.github.com)
+
+## License
+
+Proprietary: Annika Fischer 2023
