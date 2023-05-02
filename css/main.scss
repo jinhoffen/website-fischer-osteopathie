@@ -278,10 +278,6 @@ $baseurl: '#{$site_baseurl}/images';
 		}
 	}
 
-	br{
-		display:block !important;
-	}
-
 	.align-left {
 		text-align: left;
 	}
@@ -1644,6 +1640,15 @@ $baseurl: '#{$site_baseurl}/images';
 		position: relative;
 		text-align: center;
 
+		> .inner {
+			position: absolute;
+			bottom : 0;
+			left: 0;
+			width: 100%;
+			text-align:center;
+			margin-bottom: 0 0 2em 0;
+		}
+
 		h2 {
 			@include vendor('transform', 'scale(1)');
 			@include vendor('transition', ('transform 0.5s ease', 'opacity 0.5s ease'));
@@ -1679,6 +1684,7 @@ $baseurl: '#{$site_baseurl}/images';
 		p {
 			letter-spacing: _size(letter-spacing-alt);
 			text-transform: uppercase;
+			font-size: 1.2em;
 
 			a {
 				color: inherit;
@@ -1741,7 +1747,7 @@ $baseurl: '#{$site_baseurl}/images';
 
 		@include breakpoint('<=small') {
 			@include padding(7em, 3em);
-			height: auto;
+			//height: auto;
 			min-height: 0;
 
 			h2 {
@@ -1981,7 +1987,7 @@ $baseurl: '#{$site_baseurl}/images';
 
 	body.landing {
 		#page-wrapper {
-			@include vendor('background-image', ('linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5))', 'url("#{$baseurl}/banner.jpg")'));
+			@include vendor('background-image', ('linear-gradient(top, rgba(0,0,0,0.1), rgba(0,0,0,0.1))', 'url("#{$baseurl}/banner.jpg")'));
 			background-attachment: fixed;
 			background-position: center center;
 			background-repeat: no-repeat;
@@ -2002,7 +2008,7 @@ $baseurl: '#{$site_baseurl}/images';
 
 			#banner,
 			.wrapper.style4 {
-				@include vendor('background-image', ('linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5))', 'url("#{$baseurl}/portrait_annika_fischer_about_me.jpg")'));
+				@include vendor('background-image', ('linear-gradient(top, rgba(0,0,0,0.1), rgba(0,0,0,0.1))', 'url("#{$baseurl}/banner.jpg")'));
 				background-position: center center;
 				background-repeat: no-repeat;
 				background-size: cover;
