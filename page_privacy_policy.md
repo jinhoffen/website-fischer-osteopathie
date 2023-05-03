@@ -9,22 +9,30 @@ order: 98
 name : Praxis für Osteopathie
 ---
 
+<button type="button" class="button booking" data-cc="c-settings">Cookie Präferenzen</button>
+
 Verantwortlicher im Sinne der Datenschutzgesetze, insbesondere der EU-Datenschutzgrundverordnung (DSGVO), ist:
 
-Annika Fischer
+**Annika Fischer**
+
+## Übersicht
+{:.no_toc}
+
+* TOC
+{:toc}
 
 ## Ihre Betroffenenrechte
 
-Unter den angegebenen Kontaktdaten unseres Datenschutzbeauftragten können Sie jederzeit folgende Rechte ausüben:
+Unter den im <a href='{{ "/impressum" | prepend: site.baseurl }}' aria-label='Gehe zu {{ "/datenschutz" | prepend: site.baseurl }}'>Impressum</a> angegebenen Kontaktdaten können Sie jederzeit folgende Rechte ausüben:
 
-* Auskunft über Ihre bei uns gespeicherten Daten und deren Verarbeitung (Art. 15 DSGVO),
+* Auskunft über Ihre gespeicherten Daten und deren Verarbeitung (Art. 15 DSGVO),
 * Berichtigung unrichtiger personenbezogener Daten (Art. 16 DSGVO),
-* Löschung Ihrer bei uns gespeicherten Daten (Art. 17 DSGVO),
-* Einschränkung der Datenverarbeitung, sofern wir Ihre Daten aufgrund gesetzlicher Pflichten noch nicht löschen dürfen (Art. 18 DSGVO),
-* Widerspruch gegen die Verarbeitung Ihrer Daten bei uns (Art. 21 DSGVO) und
-* Datenübertragbarkeit, sofern Sie in die Datenverarbeitung eingewilligt haben oder einen Vertrag mit uns abgeschlossen haben (Art. 20 DSGVO).
+* Löschung Ihrer gespeicherten Daten (Art. 17 DSGVO),
+* Einschränkung der Datenverarbeitung, sofern Ihre Daten aufgrund gesetzlicher Pflichten noch nicht gelöscht werden dürfen (Art. 18 DSGVO),
+* Widerspruch gegen die Verarbeitung Ihrer Daten (Art. 21 DSGVO) und
+* Datenübertragbarkeit, sofern Sie in die Datenverarbeitung eingewilligt haben oder einen Vertrag mit mir abgeschlossen haben (Art. 20 DSGVO).
 
-Sofern Sie uns eine Einwilligung erteilt haben, können Sie diese jederzeit mit Wirkung für die Zukunft widerrufen.
+Sofern Sie eine Einwilligung erteilt haben, können Sie diese jederzeit mit Wirkung für die Zukunft widerrufen.
 Sie können sich jederzeit mit einer Beschwerde an eine Aufsichtsbehörde wenden.
 
 ## Erfassung allgemeiner Informationen beim Besuch unserer Website
@@ -84,12 +92,6 @@ Der Zweck der Verwendung technisch notwendiger Cookies ist, die Nutzung von Webs
 Einige Funktionen unserer Internetseite können ohne den Einsatz von Cookies nicht angeboten werden.
 Für diese ist es erforderlich, dass der Browser auch nach einem Seitenwechsel wiedererkannt wird.
 
-Für folgende Anwendungen benötigen wir Cookies:
-
-| Name                  | Quelle                          | Ablaufzeit | Zweck                                                                   |
-|-----------------------|---------------------------------|--------------------------------------------------------------------------------------|
-| cookieconsent_status  | [Osano](https://www.osano.com)  | 1 Jahr     | Nachverfolgung der Einwilligung zur Nutzung nicht-essentieller Cookies  |
-
 #### Rechtsgrundlage und berechtigtes Interesse
 
 Die Verarbeitung erfolgt gemäß Art. 6 Abs. 1 lit. f DSGVO auf Basis unseres berechtigten Interesses an einer nutzerfreundlichen Gestaltung unserer Website.
@@ -112,14 +114,7 @@ Lesen Sie dazu die Informationen über Ihr Widerspruchsrecht nach Art. 21 DSGVO 
 
 Des Weiteren setzen wir Cookies ein, um das Angebot auf unserer Website besser auf die Interessen unserer Besucher abzustimmen oder auf Basis statistischer Auswertungen allgemein zu verbessern.
 
-Wir setzen folgende nicht notwendige Cookies für die unter Abschnitt [Anwendungen](#anwendungen) aufgelistete Anwendungen.
-
-| Name                   | Quelle                                                              | Ablaufzeit | Zweck                                     |
-|------------------------|---------------------------------------------------------------------|------------|-------------------------------------------|
-| \_ga                   | [Google](https://policies.google.com/technologies/cookies?hl=de)    | 2 Jahre    | Dient zur Unterscheidung zwischen Nutzern |
-| \_ga\_\<container id\> | [Google](https://policies.google.com/technologies/cookies?hl=de)    | 2 Jahre    | Dient zur Speicherung des Sitzungsstatus  |
-| NID                    | [Google](https://policies.google.com/technologies/cookies?hl=de)    | 6 Monate   | Personalisierung                          |
-
+Wir setzen nicht notwendige Cookies für die unter Abschnitt [Anwendungen](#anwendungen) aufgelisteten Anwendungen.
 
 #### Rechtsgrundlage
 
@@ -162,7 +157,7 @@ Aufgrund der Aktivierung der IP-Anonymisierung auf diesen Webseiten, wird Ihre I
 Nur in Ausnahmefällen wird die volle IP-Adresse an einen Server von Google in den USA übertragen und dort gekürzt.
 Die im Rahmen von Google Analytics von Ihrem Browser übermittelte IP-Adresse wird nicht mit anderen Daten von Google zusammengeführt. 
 
-Nähere Informationen zu Nutzungsbedingungen und Datenschutz finden Sie unter <a href="https://www.google.com/analytics/terms/de.html"rel="noopener" target="_blank">https://www.google.com/analytics/terms/de.html</a> und unter <a href="https://policies.google.com/?hl=de" rel="noopener" target="_blank">https://policies.google.com/?hl=de</a>.
+Nähere Informationen zu Nutzungsbedingungen und Datenschutz finden Sie unter <a href="https://www.google.com/analytics/terms/de.html" rel="noopener" target="_blank">https://www.google.com/analytics/terms/de.html</a> und unter <a href="https://policies.google.com/?hl=de" rel="noopener" target="_blank">https://policies.google.com/?hl=de</a>.
 
 Im Auftrag des Betreibers dieser Website wird Google diese Informationen benutzen, um Ihre Nutzung der Webseite auszuwerten, um Reports über die Webseitenaktivitäten zusammenzustellen und um weitere mit der Websitenutzung und der Internetnutzung verbundene Dienstleistungen gegenüber dem Webseitenbetreiber zu erbringen. 
 
@@ -177,7 +172,7 @@ Damit wird die Erfassung durch Google Analytics für diese Website und für dies
 
 Sie können darüber hinaus die Speicherung der Cookies durch eine entsprechende Einstellung Ihrer Browser-Software verhindern; wir weisen Sie jedoch darauf hin, dass Sie in diesem Fall gegebenenfalls nicht sämtliche Funktionen dieser Website vollumfänglich werden nutzen können. 
 
-Sie können darüber hinaus die Erfassung der durch das Cookie erzeugten und auf Ihre Nutzung der Webseite bezogenen Daten (inkl. Ihrer IP-Adresse) an Google sowie die Verarbeitung dieser Daten durch Google verhindern, indem Sie <a href="http://tools.google.com/dlpage/gaoptout?hl=de" rel="noopener" target="_blank">ein Browser-Plugin </a> herunterladen und installieren.
+Sie können darüber hinaus die Erfassung der durch das Cookie erzeugten und auf Ihre Nutzung der Webseite bezogenen Daten (inkl. Ihrer IP-Adresse) an Google sowie die Verarbeitung dieser Daten durch Google verhindern, indem Sie <a href="https://tools.google.com/dlpage/gaoptout?hl=de" rel="noopener" target="_blank">ein Browser-Plugin </a> herunterladen und installieren.
 
 ### Google Webfonts
 
@@ -235,4 +230,11 @@ Für Ihren erneuten Besuch gilt dann die neue Datenschutzerklärung.
 
 Wenn Sie Fragen zum Datenschutz haben, schreiben Sie uns bitte eine E-Mail.
 
-Die Datenschutzerklärung basiert auf einer Vorlage der <a href="https://www.activemind.de/datenschutz/datenschutzbeauftragter/" target="_blank" rel="noopener">activeMind AG</a> (Version #2020-09-30).
+-----------
+
+<small>
+    Diese Datenschutzerklärung wurde zuletzt geändert am {{ site.last_change.privacy_policy }}.
+    Sie basiert auf einer Vorlage der <a href="https://www.activemind.de/datenschutz/datenschutzbeauftragter/" target="_blank" rel="noopener">activeMind AG</a> (Version #2020-09-30).
+</small>
+
+

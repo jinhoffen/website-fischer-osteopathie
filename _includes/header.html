@@ -1,4 +1,4 @@
 <!-- Header -->
-<header id="header" class="alt">
+<header id="header"{% if page.layout == 'landing' %} class="alt"{% endif %}>
     <h1><a href="{{ site.baseurl }}/">{{ site.landing_page_title }}</a></h1>
 </header>

@@ -278,10 +278,6 @@ $baseurl: '#{$site_baseurl}/images';
 		}
 	}
 
-	br{
-		display:block !important;
-	}
-
 	.align-left {
 		text-align: left;
 	}
@@ -1035,35 +1031,16 @@ $baseurl: '#{$site_baseurl}/images';
 			width: 50%;
 
 			@for $i from 1 through _misc(max-features) {
-				//$j: 0.035 * $i;
 				$j: 0.09 * $i;
 
 				&:nth-child(#{$i}) {
-					//background-color: rgba(0,0,0, $j);
 					background-color: rgba(114,33,41,$j);
 				}
 			}
 
 			&:nth-child(#{5}) {
 				background-color: rgba(114,33,41,0.15);
-			}
-
-			// &:nth-child(#{1}) {
-			// 	background-color: rgba(114,33,41,0.5);
-			// }
-			// &:nth-child(#{2}) {
-			// 	background-color: rgba(114,33,41,0.5);
-			// }
-			// &:nth-child(#{3}) {
-			// 	background-color: rgba(114,33,41,0.25);
-			// }
-			// &:nth-child(#{4}) {
-			// 	background-color: rgba(114,33,41,0.25);
-			// }
-			// &:nth-child(#{5}) {
-			// 	background-color: rgba(114,33,41,0.15);
-			// }
-			
+			}			
 
 			&:before {
 				display: block;
@@ -1120,15 +1097,6 @@ $baseurl: '#{$site_baseurl}/images';
 			h5 {
 				font-weight:normal;
 			}
-		}
-
-		ul.flist,
-		ul.flist li,
-		ul.flist ul li {
-			all: revert;
-			padding:0;
-			list-style-type: disc;
-			left: 1.75em;
 		}
 
 	}
@@ -1672,6 +1640,15 @@ $baseurl: '#{$site_baseurl}/images';
 		position: relative;
 		text-align: center;
 
+		> .inner {
+			position: absolute;
+			bottom : 0;
+			left: 0;
+			width: 100%;
+			text-align:center;
+			margin-bottom: 0 0 2em 0;
+		}
+
 		h2 {
 			@include vendor('transform', 'scale(1)');
 			@include vendor('transition', ('transform 0.5s ease', 'opacity 0.5s ease'));
@@ -1707,6 +1684,7 @@ $baseurl: '#{$site_baseurl}/images';
 		p {
 			letter-spacing: _size(letter-spacing-alt);
 			text-transform: uppercase;
+			font-size: 1.2em;
 
 			a {
 				color: inherit;
@@ -1769,7 +1747,7 @@ $baseurl: '#{$site_baseurl}/images';
 
 		@include breakpoint('<=small') {
 			@include padding(7em, 3em);
-			height: auto;
+			//height: auto;
 			min-height: 0;
 
 			h2 {
@@ -1866,6 +1844,15 @@ $baseurl: '#{$site_baseurl}/images';
 			background-repeat: no-repeat;
 			background-size: cover;
 			text-align: center;
+
+			&.alt {
+				@include padding(8em, 0);
+				@include vendor('background-image', ('linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5))', 'url("#{$baseurl}/banner_blurred.jpg")'));
+				@media print {
+				  @include padding(2em, 0);
+				  background: _palette(bg) none;
+				}
+			  }
 
 			h2 {
 				font-size: 1.75em;
@@ -2000,7 +1987,7 @@ $baseurl: '#{$site_baseurl}/images';
 
 	body.landing {
 		#page-wrapper {
-			@include vendor('background-image', ('linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5))', 'url("#{$baseurl}/banner.jpg")'));
+			@include vendor('background-image', ('linear-gradient(top, rgba(0,0,0,0.1), rgba(0,0,0,0.1))', 'url("#{$baseurl}/banner.jpg")'));
 			background-attachment: fixed;
 			background-position: center center;
 			background-repeat: no-repeat;
@@ -2021,7 +2008,7 @@ $baseurl: '#{$site_baseurl}/images';
 
 			#banner,
 			.wrapper.style4 {
-				@include vendor('background-image', ('linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5))', 'url("#{$baseurl}/portrait_annika_fischer_about_me.jpg")'));
+				@include vendor('background-image', ('linear-gradient(top, rgba(0,0,0,0.1), rgba(0,0,0,0.1))', 'url("#{$baseurl}/banner.jpg")'));
 				background-position: center center;
 				background-repeat: no-repeat;
 				background-size: cover;
@@ -2035,40 +2022,23 @@ $baseurl: '#{$site_baseurl}/images';
 
 /* Custom: Google Maps */
 
-#map {
+#googlemaps {
 	width: 100%;
 	height: 40vw;
 	max-height: 400px;
 	min-height: 300px;
-	display: none;
 }
 
-/* Custom: Cookie Constent */
-
-#cookie-notice {
-	padding: 0.5rem 1rem; 
-	display: none; text-align: center; 
-	position: fixed; 
-	bottom: 0; 
-	width: 100%; 
-	background: #222; 
-	color: rgba(255,255,255,0.8);
-}
-#cookie-notice a {
+#googlemaps img {
+	width:100%;
+    height:100%;
+    object-fit: cover;
+    overflow: hidden;
 	display: inline-block;
-	cursor: pointer;
-	margin-left: 0.5rem;
 }
-@media all and (max-width: 767px) {
-	#cookie-notice span {
-		display: block;
-		padding-top: 3px;
-		margin-bottom: 1rem;
-	}
-	#cookie-notice a {
-		position: relative;
-		bottom: 4px;
-	}
+
+#googlemaps small {
+	font-size: 8px;
 }
 
 /* Custom: Two Practices */
