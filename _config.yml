@@ -4,7 +4,6 @@ landing_page_title: Praxis für Osteopathie
 seo_landing_page_title: Annika Fischer | Praxis für Osteopathie & Kinderosteopathie
 seo_landing_page_description: Osteopathische Behandlung für Erwachsene, Kinder & Babys in Berlin Mitte & Steglitz. Osteopathie MSc, Heilpraktikerin, Mitglied im Osteopathieverband VfO.
 baseurl: ""
-url: "https://www.fischer-osteopathie.de"
 timezone: Europe/Berlin
 lang: de_DE
 lang_only: de
@@ -12,7 +11,6 @@ theme_color: "#18202a"
 last_change:
   privacy_policy: "2. Mai 2023"
   legal: "2. Mai 2023"
-  
 
 # build settings
 markdown: kramdown
