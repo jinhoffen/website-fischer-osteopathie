@@ -1,3 +1,6 @@
+# exclude from build
+exclude: ["Gemfile", "node_modules", "vendor", "backup", "README.md", "firebase.json", "package.json", "package-lock.json", "fonts/selection.json", "page_demo.html"]
+
 # API keys in production
 google_maps:
   api_key: AIzaSyDYWvfrxPPJpOnTyKWrjr0iSgOwVOV-Ssw

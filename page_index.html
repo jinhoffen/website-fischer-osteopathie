@@ -40,50 +40,56 @@ internal_id: index
 </section>
 
 <!-- Locations -->
-<section id="two" class="wrapper style3 special">
+<section id="practice" class="wrapper style3 special">
     <div class="inner">
         <header class="major">
             <h2>Standorte</h2>
             <ul class="features">
                 <li class="practice">
                     <h4>{{ site.data.global.contact.praxis_berlin_steglitz.location }}</h4>
-                    <p>
-                        <a target="_blank" rel="noopener" href='{{ site.data.global.contact.praxis_berlin_steglitz.maps }}' aria-label="Zeige Karte von {{ site.data.global.contact.praxis_berlin_steglitz.name }}"><i class="icon-map" aria-hidden="true"></i></a>
+                    <address style="margin-bottom: 1.5em;">
                         {{ site.data.global.contact.praxis_berlin_steglitz.name }}
+                        <a target="_blank" rel="noopener" href='{{ site.data.global.contact.praxis_berlin_steglitz.maps }}' aria-label="Zeige Karte von {{ site.data.global.contact.praxis_berlin_steglitz.name }}"><i class="icon-map" aria-hidden="true"></i></a>
                         <br>
                         {{ site.data.global.contact.praxis_berlin_steglitz.line1 }}<br>
                         {{ site.data.global.contact.praxis_berlin_steglitz.line2 }}
-                    </p>
-                    <p><a target="_blank" rel="noopener" href="{{ site.data.global.contact.praxis_berlin_steglitz.url }}" class="button booking">Termin buchen</a></p>
-                    <h5>Behandlungszeiten</h5>
+                    </address>
                     <p>
-                        <strong>Montag</strong> {{ site.data.global.contact.praxis_berlin_steglitz.hours.monday.start }} bis {{ site.data.global.contact.praxis_berlin_steglitz.hours.monday.end }} Uhr<br>
-                        <strong>Dienstag</strong> {{ site.data.global.contact.praxis_berlin_steglitz.hours.tuesday.start }} bis {{ site.data.global.contact.praxis_berlin_steglitz.hours.tuesday.end }} Uhr<br>
-                        <strong>Freitag</strong> {{ site.data.global.contact.praxis_berlin_steglitz.hours.friday.start }} bis {{ site.data.global.contact.praxis_berlin_steglitz.hours.friday.end }} Uhr<br>
+                        <a target="_blank" rel="noopener" href="{{ site.data.global.contact.praxis_berlin_steglitz.url }}" class="button booking">Termin buchen</a>
                     </p>
+                    <h5>Behandlungszeiten</h5>
+                    <ul class="none" style="margin: 0;padding-left: 0;">
+                        <li><strong>Montag</strong> {{ site.data.global.contact.praxis_berlin_steglitz.hours.monday.start }} bis {{ site.data.global.contact.praxis_berlin_steglitz.hours.monday.end }} Uhr</li>
+                        <li><strong>Dienstag</strong> {{ site.data.global.contact.praxis_berlin_steglitz.hours.tuesday.start }} bis {{ site.data.global.contact.praxis_berlin_steglitz.hours.tuesday.end }} Uhr</li>
+                        <li><strong>Freitag</strong> {{ site.data.global.contact.praxis_berlin_steglitz.hours.friday.start }} bis {{ site.data.global.contact.praxis_berlin_steglitz.hours.friday.end }} Uhr</li>
+                    </ul>
                 </li>
                 <li class="practice">
                     <h4>{{ site.data.global.contact.praxis_berlin_mitte.location }}</h4>
-                    <p>
+                    <address style="margin-bottom: 1.5em;">
+                        {{ site.data.global.contact.praxis_berlin_mitte.name }}
                         <a target="_blank" rel="noopener" class="simple" href='{{ site.data.global.contact.praxis_berlin_mitte.maps }}' aria-label="Zeige Karte von {{ site.data.global.contact.praxis_berlin_mitte.name }}"><i class="icon-map" aria-hidden="true"></i></a>
-                        {{ site.data.global.contact.praxis_berlin_mitte.name }}<br>
+                        <br>
                         {{ site.data.global.contact.praxis_berlin_mitte.line1 }}<br>
                         {{ site.data.global.contact.praxis_berlin_mitte.line2 }}
-                    </p>
-                    <p><a target="_blank" rel="noopener" href="{{ site.data.global.contact.praxis_berlin_mitte.url }}" class="button booking">Termin buchen</a></p>
-                    <h5>Behandlungszeiten</h5>
+                    </address>
                     <p>
-                        <strong>Mittwoch</strong> {{ site.data.global.contact.praxis_berlin_mitte.hours.wednesday.start }} bis {{ site.data.global.contact.praxis_berlin_mitte.hours.wednesday.end }} Uhr<br>
-                        <strong>Donnerstag</strong> {{ site.data.global.contact.praxis_berlin_mitte.hours.thursday.start }} bis {{ site.data.global.contact.praxis_berlin_mitte.hours.thursday.end }} Uhr<br>
-                        <strong>Samstag</strong> {{ site.data.global.contact.praxis_berlin_mitte.hours.saturday.start }} bis {{ site.data.global.contact.praxis_berlin_mitte.hours.saturday.end }} Uhr<br>
+                        <a target="_blank" rel="noopener" href="{{ site.data.global.contact.praxis_berlin_mitte.url }}" class="button booking">Termin buchen</a>
                     </p>
+                    <h5>Behandlungszeiten</h5>
+                    <ul class="none">
+                        <li><strong>Mittwoch</strong> {{ site.data.global.contact.praxis_berlin_mitte.hours.wednesday.start }} bis {{ site.data.global.contact.praxis_berlin_mitte.hours.wednesday.end }} Uhr</li>
+                        <li><strong>Donnerstag</strong> {{ site.data.global.contact.praxis_berlin_mitte.hours.thursday.start }} bis {{ site.data.global.contact.praxis_berlin_mitte.hours.thursday.end }} Uhr</li>
+                        <li><strong>Samstag</strong> {{ site.data.global.contact.praxis_berlin_mitte.hours.saturday.start }} bis {{ site.data.global.contact.praxis_berlin_mitte.hours.saturday.end }} Uhr</li>
+                    </ul>
                 </li>
             </ul>
+            <div id="googlemaps">
+                <div id="googlemaps-static">
+                    <p>Eine interaktive Karte kann ohne Cookies nicht dargestellt werden: <a href="/" data-cc="c-settings">Cookie Präferenzen bearbeiten</a>.</p>
+                </div>
+            </div>
         </header>
-        <div id="googlemaps">
-            <img src="{{ '/images/google_maps_static.png' | prepend: site.baseurl }}" alt="Karte der Standorte von Annika Fischer's Osteopathie Praxis">
-            <small>Diese Karte ist ein statisches Bild, weil Sie der Verwendung von Cookies widersprochen haben.</small>
-        </div>
     </div>
 </section>
 
@@ -113,10 +119,10 @@ internal_id: index
                 </li>
                 <li>
                     <h4>Regelmäßige Fortbildungen</h4>
-                    <p>
-                        <a target="_blank" href="https://osteopathie-institut-frankfurt.de/kurse/integrative-kinderosteopathie/">Kinder- und Säuglingsosteopathieausbildung</a> am Osteopathie-Institut Frankfurt<br>
-                        <a target="_blank" href="https://lmosteo.com/de/was-ist-lmo">Mechanical Link LMO nach Paul Chauffour</a> (4/6 Modulen abgeschlossen)
-                    </p>
+                    <ul class="none">
+                        <li><a target="_blank" href="https://osteopathie-institut-frankfurt.de/kurse/integrative-kinderosteopathie/">Kinder- und Säuglingsosteopathieausbildung</a> am Osteopathie-Institut Frankfurt</li>
+                        <li><a target="_blank" href="https://lmosteo.com/de/was-ist-lmo">Mechanical Link LMO nach Paul Chauffour</a> (4/6 Modulen abgeschlossen)</li>
+                    </ul>
                 </li>
                 <li class="icon iconfont-utensils">
                     <h4>Verbandszugehörigkeit</h4>
