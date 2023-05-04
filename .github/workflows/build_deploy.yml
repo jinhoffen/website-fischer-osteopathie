@@ -28,7 +28,6 @@ jobs:
         if: github.event_name == 'pull_request'
         run: bundle exec jekyll build -t --config "_config.yml,_config.prod.yml"
       - name: Run htmlproofer
-        if: github.ref == 'refs/heads/main'
         run: |
           bundle exec htmlproofer ./_site --allow-missing-href --allow-hash-href --ignore-status-codes 301,302,999 --ignore-urls "https://html5up.net"
       - name: Deploy to Firebase Hosting
