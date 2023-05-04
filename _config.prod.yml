@@ -1,3 +1,6 @@
+# page settings
+url: "https://www.fischer-osteopathie.de"
+
 # exclude from build
 exclude: ["Gemfile", "node_modules", "vendor", "backup", "README.md", "firebase.json", "package.json", "package-lock.json", "fonts/selection.json", "page_demo.html"]
 
