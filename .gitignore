@@ -10,16 +10,14 @@ Gemfile.lock
 # VSCode
 .vscode
 
-# Node JS modules
+# NodeJS
 node_modules/
+package-lock.json
+package.json
 
 # Firebase cache
 .firebase/
 firebase-debug.log
 
 # internal files
-backup/
-resources/
 _config.dev.yml
-ACCOUNTS.md
-GOOGLE_MAPS.md
