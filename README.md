@@ -18,7 +18,6 @@ Table of Contents:
     - [Build Site](#build-site)
   - [Continuous Deployment](#continuous-deployment)
   - [Frameworks](#frameworks)
-  - [License](#license)
 
 ## Build
 
@@ -110,21 +109,20 @@ Note that the main branch is protected in GitHub and only allows merges through 
 
 ## Frameworks
 
-* [HTML5 UP's Spectral Theme](https://github.com/arkadianriver/spectral)
-* [Jekyll](https://jekyllrb.com/) with plugins:
+* Spectral Theme (packaged on 2022-03-06) by [HTML5 UP](https://html5up.net/spectral)
+* [Jekyll v4.2.2](https://jekyllrb.com/) with plugins:
   * [Last-Modified](https://github.com/gjtorikian/jekyll-last-modified-at)
   * [Sitemap](https://github.com/jekyll/jekyll-sitemap)
   * [Version](https://github.com/rob-murray/jekyll-version-plugin)
   * [Minifier](https://github.com/digitalsparky/jekyll-minifier)
   * [Webp](https://github.com/sverrirs/jekyll-webp)
-  * [Jquery 3.3.1](https://jquery.com/)
-  * [Scrolly](https://github.com/Victa/scrolly)
-  * [Scrollex](https://github.com/ajlkn/jquery.scrollex)
-  * [Cookie Consent](https://github.com/orestbida/cookieconsent)
+  * [HTML Proofer](https://github.com/gjtorikian/html-proofer)
+  * [Smartify](https://github.com/pathawks/jekyll-smartify)
+* JavaScript libraries:
+  * [jQuery v3.6.0](https://jquery.com/)
+  * [jQuery Scrolly v1.0.0-dev](https://github.com/Victa/scrolly)
+  * [jQuery Scrollex v0.2.1](https://github.com/ajlkn/jquery.scrollex)
+  * [Cookie Consent v2.9.0](https://github.com/orestbida/cookieconsent)
 * [Font Awesome 5](https://fontawesome.com/) packaged via [Iconmoon](https://icomoon.io)
 * [Firebase Hosting](https://firebase.google.com/docs/hosting/)
 * [GitHub and GitHub Actions](https://www.github.com)
-
-## License
-
-Proprietary: Justus Inhoffen 2023

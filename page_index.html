@@ -23,8 +23,9 @@ internal_id: index
         <header class="major">
             <h2>Kontakt</h2>
             <p>
-                Ich bin als freie Mitarbeiterin in zwei <a href="#practice" class="scrolly">Osteopathie-Praxen</a> tätig.<br>
-                Termine können Sie bei mir telefonisch, per E-Mail, über Doctolib oder über die Praxis-Websites buchen.
+                Ich freue mich, Sie in der <a href="#practice" class="scrolly">Praxis im Frankfurter Nordend-Ost</a> begrüßen zu dürfen.<br/>
+
+                Termine können Sie telefonisch, per E-Mail oder über Doctolib vereinbaren.
             </p>
             <ul class="none">
                 <li>Tel {{ site.data.global.contact.tel | tel_link }}</li>
@@ -43,46 +44,18 @@ internal_id: index
 <section id="practice" class="wrapper style3 special">
     <div class="inner">
         <header class="major">
-            <h2>Standorte</h2>
-            <ul class="features">
-                <li class="practice">
-                    <h4>{{ site.data.global.contact.praxis_berlin_steglitz.location }}</h4>
-                    <address style="margin-bottom: 1.5em;">
-                        {{ site.data.global.contact.praxis_berlin_steglitz.name }}
-                        <a target="_blank" rel="noopener" href='{{ site.data.global.contact.praxis_berlin_steglitz.maps }}' aria-label="Zeige Karte von {{ site.data.global.contact.praxis_berlin_steglitz.name }}"><i class="icon-map" aria-hidden="true"></i></a>
-                        <br>
-                        {{ site.data.global.contact.praxis_berlin_steglitz.line1 }}<br>
-                        {{ site.data.global.contact.praxis_berlin_steglitz.line2 }}
-                    </address>
-                    <p>
-                        <a target="_blank" rel="noopener" href="{{ site.data.global.contact.praxis_berlin_steglitz.url }}" class="button booking">Termin buchen</a>
-                    </p>
-                    <h5>Behandlungszeiten</h5>
-                    <ul class="none" style="margin: 0;padding-left: 0;">
-                        <li><strong>Montag</strong> {{ site.data.global.contact.praxis_berlin_steglitz.hours.monday.start }} bis {{ site.data.global.contact.praxis_berlin_steglitz.hours.monday.end }} Uhr</li>
-                        <li><strong>Dienstag</strong> {{ site.data.global.contact.praxis_berlin_steglitz.hours.tuesday.start }} bis {{ site.data.global.contact.praxis_berlin_steglitz.hours.tuesday.end }} Uhr</li>
-                        <li><strong>Freitag</strong> {{ site.data.global.contact.praxis_berlin_steglitz.hours.friday.start }} bis {{ site.data.global.contact.praxis_berlin_steglitz.hours.friday.end }} Uhr</li>
-                    </ul>
-                </li>
-                <li class="practice">
-                    <h4>{{ site.data.global.contact.praxis_berlin_mitte.location }}</h4>
-                    <address style="margin-bottom: 1.5em;">
-                        {{ site.data.global.contact.praxis_berlin_mitte.name }}
-                        <a target="_blank" rel="noopener" class="simple" href='{{ site.data.global.contact.praxis_berlin_mitte.maps }}' aria-label="Zeige Karte von {{ site.data.global.contact.praxis_berlin_mitte.name }}"><i class="icon-map" aria-hidden="true"></i></a>
-                        <br>
-                        {{ site.data.global.contact.praxis_berlin_mitte.line1 }}<br>
-                        {{ site.data.global.contact.praxis_berlin_mitte.line2 }}
-                    </address>
-                    <p>
-                        <a target="_blank" rel="noopener" href="{{ site.data.global.contact.praxis_berlin_mitte.url }}" class="button booking">Termin buchen</a>
-                    </p>
-                    <h5>Behandlungszeiten</h5>
-                    <ul class="none">
-                        <li><strong>Mittwoch</strong> {{ site.data.global.contact.praxis_berlin_mitte.hours.wednesday.start }} bis {{ site.data.global.contact.praxis_berlin_mitte.hours.wednesday.end }} Uhr</li>
-                        <li><strong>Donnerstag</strong> {{ site.data.global.contact.praxis_berlin_mitte.hours.thursday.start }} bis {{ site.data.global.contact.praxis_berlin_mitte.hours.thursday.end }} Uhr</li>
-                        <li><strong>Samstag</strong> {{ site.data.global.contact.praxis_berlin_mitte.hours.saturday.start }} bis {{ site.data.global.contact.praxis_berlin_mitte.hours.saturday.end }} Uhr</li>
-                    </ul>
-                </li>
+            <h2>Standort</h2>
+            <address style="margin-bottom: 1.5em;">
+                {{ site.data.global.praxis_frankfurt_nordend_ost.name }}
+                <a target="_blank" rel="noopener" href='{{ site.data.global.praxis_frankfurt_nordend_ost.maps }}' aria-label="Zeige Karte von {{ site.data.global.praxis_frankfurt_nordend_ost.name }}"><i class="icon-map" aria-hidden="true"></i></a>
+                <br>
+                {{ site.data.global.praxis_frankfurt_nordend_ost.line1 }}<br>
+                {{ site.data.global.praxis_frankfurt_nordend_ost.line2 }}<br>
+                {{ site.data.global.praxis_frankfurt_nordend_ost.line3 }}
+            </address>
+            <h5>Behandlungszeiten</h5>
+            <ul class="none" style="margin: 0;padding-left: 0;">
+                <li><strong>Mittwoch</strong> {{ site.data.global.praxis_frankfurt_nordend_ost.hours.wednesday.start }} bis {{ site.data.global.praxis_frankfurt_nordend_ost.hours.wednesday.end }} Uhr</li>
             </ul>
             <div id="googlemaps">
                 <div id="googlemaps-static">
@@ -118,10 +91,10 @@ internal_id: index
                     <p>Zulassung erteilt vom Gesundheitsamt Karlsruhe</p>
                 </li>
                 <li>
-                    <h4>Regelmäßige Fortbildungen</h4>
+                    <h4>Weiterbildungen</h4>
                     <ul class="none">
-                        <li><a target="_blank" href="https://osteopathie-institut-frankfurt.de/kurse/integrative-kinderosteopathie/">Kinder- und Säuglingsosteopathieausbildung</a> am Osteopathie-Institut Frankfurt</li>
-                        <li><a target="_blank" href="https://lmosteo.com/de/was-ist-lmo">Mechanical Link LMO nach Paul Chauffour</a> (4/6 Modulen abgeschlossen)</li>
+                        <li><a target="_blank" href="https://osteopathie-institut-frankfurt.de/kurse/integrative-kinderosteopathie/">Kinder- und Säuglingsosteopathieausbildung</a> am Osteopathie-Institut Frankfurt</li> (abgeschlossen)
+                        <li><a target="_blank" href="https://lmosteo.com/de/was-ist-lmo">Mechanical Link LMO</a> nach Paul Chauffour (Grundausbildung mit 6/6 Modulen abgeschlossen, regelmäßige Masterkurse)</li>
                     </ul>
                 </li>
                 <li class="icon iconfont-utensils">
@@ -134,25 +107,34 @@ internal_id: index
 </section>
 
 <!-- Background Image -->
-<section id="cta" class="wrapper style4" style="height:350px;">
-
-</section>
+<section id="cta" class="wrapper style4" style="height:350px;"></section>
 
 <!-- About Me -->
 <section id="four" class="wrapper style5 special">
     <div class="inner">
         <header class="major">
-            <h2>Über mich</h2>
-            <p >
-                Die Wirkungsweise der Osteopathie am eigenen Körper erfahren zu haben und mein generelles Interesse an der Gesundung des Menschen, brachten mich zu meinem Beruf als Osteopathin.<br>
-                Das bin ich mit Leib und Seele und noch immer begeistert mich die Kombination vom Erkennen anatomischer und physiologischer Zusammenhänge, einer wissenschaftlichen Herangehensweise, dem Kontakt mit Patienten und dem direkten Arbeiten und Erspüren mit den Händen.
+            <h2>Meine Arbeitsweise</h2>
+            <p>
+                Als Osteopathin stehe ich Ihnen für die Diagnostik und Behandlung verschiedenster Schmerzzustände und Beschwerden zur Verfügung.
+                Ich unterstütze Sie dabei, sich möglichst schnell wieder fit und beweglich zu fühlen. Der Körper soll in ein gesunde Gleichgewicht gelangen, sodass er alle Voraussetzungen hat um sich selbst zu regulieren.
+            </p>
+            <p> 
+                Die Osteopathie bietet ein breites Spektrum an Behandlungsansätzen und kann sowohl in akuten und chronischen Fällen als auch präventiv eingesetzt werden.
             </p>
             <p>
-                In der präzisen Diagnostik und Therapie werden sowohl die strukturellen körperlichen als auch die emotionalen und ernährungsphysiologischen Einflüsse auf den Körper berücksichtigt.<br>
-                Sie als Patient stehen mit Ihrem individuellen Anliegen im Mittelpunkt und mein Ziel ist es, Sie dabei zu unterstützen wieder in ein gesundes Gleichgewicht zu gelangen, sodass der Körper alle Voraussetzungen hat, sich selbst zu regulieren.<br>
-                Dafür bietet die Osteopathie ein breites Spektrum an Behandlungsansätzen und kann sowohl in akuten und chronischen Fällen als auch präventiv eingesetzt werden.
+                Um Ihr Anliegen bestmöglich und umfassend angehen zu können, beginnt die Behandlung mit einer Anamnese und ausführlichen Untersuchung.
+                Ich bespreche mit Ihnen meinen Behandlungsplan und es folgt eine auf Ihre Beschwerden abgestimmte Behandlung.
+                Ich arbeite dabei viel mit dem Konzept der LMO (Lien Mécanique Ostéopathique), was soviel bedeutet wie mechanische osteopathische Vernetzung.
+                Die LMO ist eine ganzheitlich differenzierte Untersuchungs- und Behandlungsmethode, bei der der Körper immer im Gesamten betrachtet und sehr spezifisch untersucht wird. Durch die guten anatomischen Kenntnisse wird die Untersuchung sehr präzise mit dem Ziel, die Ursache der Beschwerden aufzufinden. Untersuchung und Behandlung sind sehr sanft und nicht schmerzhaft. <a target="_blank" href="https://lmosteo.com/de/informationen-fuer-patienten">Weitere Informationen zu Mechanical Link LMO erhalten Sie hier</a>.
             </p>
-            <p>Um meine Behandlungstechniken und mein Wissen zu erweitern, nehme ich regelmäßig an Fort- und Weiterbildungen teil.</p>
+            <p>
+                Egal ob jung oder alt: Menschen jeglichen Alters sind willkommen. 
+                Nach meinem 5-jährigen Vollzeit Osteopathie-Studium absolvierte ich eine 2-jährige Zusatzausbildung für Kinder- und Säuglingsosteopathie.
+                In den letzten Jahren sammelte ich als selbstständige Osteopathin in Berlin Erfahrung in der Arbeit mit Erwachsenen, Säuglingen, Kindern, Schwangeren und älteren Menschen.
+            </p>
+            <p>
+                Ich bin Osteopathin mit Leib und Seele. Durch eigene positive Erfahrungen mit der Osteopathie kam ich zu meinem Beruf und noch immer begeistert er mich. Die Kombination aus dem Erkennen anatomischer und physiologischer Zusammenhänge, dem Kontakt mit Patienten sowie dem direkten Arbeiten und Erspüren mit den Händen ist das, was die Arbeit für mich so interessant und abwechslungsreich macht.
+            </p>
         </header>
     </div>
 </section>

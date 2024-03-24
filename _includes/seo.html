@@ -14,167 +14,120 @@
 <meta property="og:locale" content="{{ site.lang }}">
 <meta property="og:url" content="{{ currentUrl }}">
 <meta property="og:image" content="{{ site.url }}/images/portrait_annika_fischer_landscape.jpg">
-<meta property="og:image:alt" content="Portrait von Annika Fischer im Behandlungsraum der Praxis Osteopathie Berlin Mitte" >
+<meta property="og:image:alt" content="Portrait von Annika Fischer" >
 <meta property="og:image:type" content="image/jpeg">
 <meta property="og:image:width" content="600">
 <meta property="og:image:height" content="600">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:description" content="Portrait von Annika Fischer im Behandlungsraum der Praxis Osteopathie Berlin Mitte">
+<meta name="twitter:description" content="Portrait von Annika Fischer">
 <meta name="twitter:title" content="{{ currentTitle }}">
 <meta name="twitter:domain" content="{{ currentUrl }}">
 <meta name="twitter:image:src" content="{{ site.url }}/images/portrait_annika_fischer_square.jpg">
 <script type="application/ld+json">
 [
     {
-    "@context": "http://schema.org",
-    "@id": "{{ physicianId }}",
-    "@type": "physician",
-    "name": "{{ site.data.global.contact.name }}",
-    "url": "{{ currentUrl }}",
-    "image": [
-        "{{ '/images/portrait.jpg' | prepend: site.baseurl | prepend: site.url }}",
-        "{{ '/images/practice_berlin_mitte.jpg' | prepend: site.baseurl | prepend: site.url }}",
-        "{{ '/images/practice_berlin_steglitz.jpg' | prepend: site.baseurl | prepend: site.url }}"
-    ],
-    "telephone": "{{ site.data.global.contact.tel }}",
-    "founder": { "@id": "{{ personId }}"},
-    "foundingDate": "{{site.data.global.organization.founded_iso8601}}",
-    "isAcceptingNewPatients": "{{ site.data.global.organization.acceptNewPatients }}",
-    "paymentAccepted": "Cash, Debit Card",
-    "currenciesAccepted": "EUR",
-    "publicAccess": true,
-    "knowsLanguage": ["DE","EN","FR"],
-    "areaServed": [
-        {
-            "@type": "City",
-            "name": "Berlin",
-            "sameAs": "https://en.wikipedia.org/wiki/Berlin"  
-        }
-    ],
-    "availableService": [
-        {
-            "@type": "MedicalTherapy",
-            "medicineSystem": "Osteopathic"
-        },
-        {
-            "@type": "MedicalProcedure",
-            "name": "Kopfschmerzen"
-        },
-        {
-            "@type": "MedicalProcedure",
-            "name": "Schwangerenbetreuung"
-        },
-        {
-            "@type": "MedicalProcedure",
-            "name": "Rückenschmerzen"
-        },
-        {
-            "@type": "MedicalProcedure",
-            "name": "Bandscheibenvorfall"
-        },
-        {
-            "@type": "MedicalProcedure",
-            "name": "Halswirbelsäulen-Syndrom (HWS-Syndrom)"
-        },
-        {
-            "@type": "MedicalProcedure",
-            "name": "Karpaltunnelsyndrom"
-        },
-        {
-            "@type": "MedicalProcedure",
-            "name": "Migräne"
-        },
-        {
-            "@type": "MedicalProcedure",
-            "name": "Schulterschmerzen"
-        },
-        {
-            "@type": "MedicalProcedure",
-            "name": "Kiefergelenkbeschwerden / Craniomandibuläre Dysfunktion (CMD)"
-        },
-        {
-            "@type": "MedicalProcedure",
-            "name": "Knieschmerzen"
-        },
-        {
-            "@type": "MedicalProcedure",
-            "name": "Osteopathie für Kinder"
-        },
-        {
-            "@type": "MedicalProcedure",
-            "name": "Osteopathie für Erwachsene"
-        },
-        {
-            "@type": "MedicalProcedure",
-            "name": "Osteopathie für Babys"
-        },
-        {
-            "@type": "MedicalProcedure",
-            "name": "Periodenschmerzen / Dysmenorrhoe"
-        }
-    ],
-    "address": [
-        {
+        "@context": "http://schema.org",
+        "@id": "{{ physicianId }}",
+        "@type": "physician",
+        "name": "{{ site.data.global.contact.name }}",
+        "url": "{{ currentUrl }}",
+        "image": "{{ '/images/portrait.jpg' | prepend: site.baseurl | prepend: site.url }}",
+        "telephone": "{{ site.data.global.contact.tel }}",
+        "founder": { "@id": "{{ personId }}"},
+        "foundingDate": "{{site.data.global.organization.founded_iso8601}}",
+        "isAcceptingNewPatients": "{{ site.data.global.organization.acceptNewPatients }}",
+        "paymentAccepted": "Cash, Debit Card",
+        "currenciesAccepted": "EUR",
+        "publicAccess": true,
+        "knowsLanguage": ["DE","EN","FR"],
+        "areaServed": [
+            {
+                "@type": "City",
+                "name": "Frankfurt am Main",
+                "sameAs": "https://de.wikipedia.org/wiki/Frankfurt_am_Main"  
+            }
+        ],
+        "availableService": [
+            {
+                "@type": "MedicalTherapy",
+                "medicineSystem": "Osteopathic"
+            },
+            {
+                "@type": "MedicalProcedure",
+                "name": "Kopfschmerzen"
+            },
+            {
+                "@type": "MedicalProcedure",
+                "name": "Schwangerenbetreuung"
+            },
+            {
+                "@type": "MedicalProcedure",
+                "name": "Rückenschmerzen"
+            },
+            {
+                "@type": "MedicalProcedure",
+                "name": "Bandscheibenvorfall"
+            },
+            {
+                "@type": "MedicalProcedure",
+                "name": "Halswirbelsäulen-Syndrom (HWS-Syndrom)"
+            },
+            {
+                "@type": "MedicalProcedure",
+                "name": "Karpaltunnelsyndrom"
+            },
+            {
+                "@type": "MedicalProcedure",
+                "name": "Migräne"
+            },
+            {
+                "@type": "MedicalProcedure",
+                "name": "Schulterschmerzen"
+            },
+            {
+                "@type": "MedicalProcedure",
+                "name": "Kiefergelenkbeschwerden / Craniomandibuläre Dysfunktion (CMD)"
+            },
+            {
+                "@type": "MedicalProcedure",
+                "name": "Knieschmerzen"
+            },
+            {
+                "@type": "MedicalProcedure",
+                "name": "Osteopathie für Kinder"
+            },
+            {
+                "@type": "MedicalProcedure",
+                "name": "Osteopathie für Erwachsene"
+            },
+            {
+                "@type": "MedicalProcedure",
+                "name": "Osteopathie für Babys"
+            },
+            {
+                "@type": "MedicalProcedure",
+                "name": "Periodenschmerzen / Dysmenorrhoe"
+            }
+        ],
+        "address": {
             "@type": "PostalAddress",
-            "streetAddress": "{{ site.data.global.contact.praxis_berlin_mitte.line1 }}",
-            "addressLocality": "{{ site.data.global.contact.praxis_berlin_mitte.city_en }}",
-            "addressRegion": "{{ site.data.global.contact.praxis_berlin_mitte.city_en }}",
-            "postalCode": "{{ site.data.global.contact.praxis_berlin_mitte.postal_code }}",
-            "addressCountry": "{{ site.data.global.contact.praxis_berlin_mitte.country_code }}"
+            "streetAddress": "{{ site.data.global.praxis_frankfurt_nordend_ost.line2 }}",
+            "addressLocality": "{{ site.data.global.praxis_frankfurt_nordend_ost.city }}",
+            "addressRegion": "{{ site.data.praxis_frankfurt_nordend_ost.city }}",
+            "postalCode": "{{ site.data.global.praxis_frankfurt_nordend_ost.postal_code }}",
+            "addressCountry": "{{ site.data.global.praxis_frankfurt_nordend_ost.country_code }}"
         },
-        {
-            "@type": "PostalAddress",
-            "streetAddress": "{{ site.data.global.contact.praxis_berlin_steglitz.line1 }}",
-            "addressLocality": "{{ site.data.global.contact.praxis_berlin_steglitz.city_en }}",
-            "addressRegion": "{{ site.data.global.contact.praxis_berlin_steglitz.city_en }}",
-            "postalCode": "{{ site.data.global.contact.praxis_berlin_steglitz.postal_code }}",
-            "addressCountry": "{{ site.data.global.contact.praxis_berlin_steglitz.country_code }}"
-        }
-    ],
-    "geo": [
-        {
+        "geo": {
             "@type": "GeoCoordinates",
-            "latitude": "{{ site.data.global.contact.praxis_berlin_mitte.lat }}",
-            "longitude": "{{ site.data.global.contact.praxis_berlin_mitte.long }}"
+            "latitude": "{{ site.data.global.praxis_frankfurt_nordend_ost.lat }}",
+            "longitude": "{{ site.data.global.praxis_frankfurt_nordend_ost.long }}"
         },
-        {
-            "@type": "GeoCoordinates",
-            "latitude": "{{ site.data.global.contact.praxis_berlin_steglitz.lat }}",
-            "longitude": "{{ site.data.global.contact.praxis_berlin_steglitz.long }}"
-        }
-    ],
-    "openingHoursSpecification": [
-        {
-            "@type": "OpeningHoursSpecification",
-            "dayOfWeek": "Monday",
-            "opens": "{{ site.data.global.contact.hours.monday.start }}",
-            "closes": "{{ site.data.global.contact.hours.monday.end }}"
-        },
-        {
-            "@type": "OpeningHoursSpecification",
-            "dayOfWeek": "Tuesday",
-            "opens": "{{ site.data.global.contact.hours.tuesday.start }}",
-            "closes": "{{ site.data.global.contact.hours.tuesday.end }}"
-        },
-        {
+        "openingHoursSpecification": {
             "@type": "OpeningHoursSpecification",
             "dayOfWeek": "Wednesday",
-            "opens": "{{ site.data.global.contact.hours.wednesday.start }}",
-            "closes": "{{ site.data.global.contact.hours.wednesday.end }}"
-        },
-        {
-            "@type": "OpeningHoursSpecification",
-            "dayOfWeek": "Thursday",
-            "opens": "{{ site.data.global.contact.hours.thursday.start }}",
-            "closes": "{{ site.data.global.contact.hours.thursday.end }}"
-        },
-        {
-            "@type": "OpeningHoursSpecification",
-            "dayOfWeek": "Friday",
-            "opens": "{{ site.data.global.contact.hours.friday.start }}",
-            "closes": "{{ site.data.global.contact.hours.friday.end }}"
+            "opens": "{{ site.data.global.praxis_frankfurt_nordend_ost.hours.wednesday.start }}",
+            "closes": "{{ site.data.global.praxis_frankfurt_nordend_ost.hours.wednesday.end }}"
         }
-    ]
     },
     {
         "@context": "http://schema.org",

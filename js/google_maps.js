@@ -5,8 +5,8 @@
 // creates markers on a map of Berlin
 function initMap() {
     const map = new google.maps.Map(document.getElementById("googlemaps"), {
-        zoom: 11,
-        center: { lat: 52.4973063108, lng: 13.3621763999 },
+        zoom: 13,
+        center: { lat: {{ site.data.global.praxis_frankfurt_nordend_ost.lat }}, lng: {{ site.data.global.praxis_frankfurt_nordend_ost.long }} },
         streetViewControl: false,
         mapTypeControl: false,
         keyboardShortcuts: false
@@ -14,8 +14,7 @@ function initMap() {
 
     // data for markers
     const locations = [
-        [{ lat: {{ site.data.global.contact.praxis_berlin_mitte.lat }}, lng: {{ site.data.global.contact.praxis_berlin_mitte.long }} }, '<a href="{{ site.data.global.contact.praxis_berlin_mitte.maps }}" rel="noopener" target="_blank">{{ site.data.global.contact.praxis_berlin_mitte.name }}</a>'],
-        [{ lat: {{ site.data.global.contact.praxis_berlin_steglitz.lat }}, lng: {{ site.data.global.contact.praxis_berlin_steglitz.long }} }, '<a href="{{ site.data.global.contact.praxis_berlin_steglitz.maps }}" rel="noopener" target="_blank">{{ site.data.global.contact.praxis_berlin_steglitz.name }}</a>']
+        [{ lat: {{ site.data.global.praxis_frankfurt_nordend_ost.lat }}, lng: {{ site.data.global.praxis_frankfurt_nordend_ost.long }} }, '<a href="{{ site.data.global.praxis_frankfurt_nordend_ost.maps }}" rel="noopener" target="_blank">{{ site.data.global.praxis_frankfurt_nordend_ost.name }}</a>']
     ];
 
     // create an info window to share between markers.
@@ -26,8 +25,8 @@ function initMap() {
         const marker = new google.maps.Marker({
             position,
             map,
-            title: `${i + 1}. ${title}`,
-            label: `${i + 1}`,
+            // title: `${i + 1}. ${title}`,
+            // label: `${i + 1}`,
             optimized: false,
         });
 

@@ -12,13 +12,10 @@ order: 99
 **Annika Fischer**\\
 Heilpraktikerin
 
-*Postanschrift von Praxis {{ site.data.global.contact.praxis_berlin_mitte.name }}*:\\
-{{ site.data.global.contact.praxis_berlin_mitte.line1 }}\\
-{{ site.data.global.contact.praxis_berlin_mitte.line2 }}
-
-*Postanschrift von {{ site.data.global.contact.praxis_berlin_steglitz.name }}*:\\
-{{ site.data.global.contact.praxis_berlin_steglitz.line1 }}\\
-{{ site.data.global.contact.praxis_berlin_steglitz.line2 }}
+*Postanschrift von Praxis {{ site.data.global.praxis_frankfurt_nordend_ost.name }}*:\\
+{{ site.data.global.praxis_frankfurt_nordend_ost.line1 }}\\
+{{ site.data.global.praxis_frankfurt_nordend_ost.line2 }}\\
+{{ site.data.global.praxis_frankfurt_nordend_ost.line3 }}
 
 *Kontakt*:\\
 Tel {{ site.data.global.contact.tel | tel_link }}\\
@@ -31,9 +28,10 @@ Ruhrallee 92\\
 44139 Dortmund
 
 *Aufsichtsbehörde*:\\
-<a href="https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/aemter/gesundheitsamt/" rel="noopener" target="_blank">Gesundheitsamt Tempelhof-Schöneberg</a>\\
-Fehrbelliner Platz 1\\
-10707 Berlin
+<a href="https://frankfurt.de/service-und-rathaus/verwaltung/aemter-und-institutionen/gesundheitsamt" rel="noopener" target="_blank">Gesundheitsamt Frankfurt am Main</a>\\
+Breite Gasse 28\\
+60313 Frankfurt am Main
+
 
 ### Hinweise zur Website
 
