@@ -1,7 +1,7 @@
 {% capture currentTitle %}{% if page.internal_id == "index" %}{{ site.seo_landing_page_title }}{% elsif page.title %}{{ site.title | escape }} | {{ page.title | escape }}{% else %}{{ site.title | escape }}{%endif %}{% endcapture %}
 {% capture currentDescription %}{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{% if page.description %}{{ page.description }}{% else %}{{ site.seo_landing_page_description }}{% endif %}{% endif %}{% endcapture %}
 {% capture personId %}{{ '/#personFischer' | prepend: site.url }}{% endcapture %}
-{% capture physicianId %}{{ '/#osteopathFischer' | prepend: site.url }}{% endcapture %}
+{% capture osteopathId %}{{ '/#osteopathFischer' | prepend: site.url }}{% endcapture %}
 {% capture currentUrl %}{{ site.url }}{{ page.url | replace:'index.html','' | strip }}{% endcapture %}
 <title>{{ currentTitle }}</title>
 <meta property="og:type" content="website">
@@ -27,7 +27,7 @@
 [
     {
         "@context": "http://schema.org",
-        "@id": "{{ physicianId }}",
+        "@id": "{{ osteopathId }}",
         "@type": "physician",
         "name": "{{ site.data.global.contact.name }}",
         "url": "{{ currentUrl }}",
@@ -36,7 +36,7 @@
         "founder": { "@id": "{{ personId }}"},
         "foundingDate": "{{site.data.global.organization.founded_iso8601}}",
         "isAcceptingNewPatients": "{{ site.data.global.organization.acceptNewPatients }}",
-        "paymentAccepted": "Cash, Debit Card",
+        "paymentAccepted": "Bar, Girokarte, Debitkarte, Kreditkarte",
         "currenciesAccepted": "EUR",
         "publicAccess": true,
         "knowsLanguage": ["DE","EN","FR"],
@@ -50,63 +50,7 @@
         "availableService": [
             {
                 "@type": "MedicalTherapy",
-                "medicineSystem": "Osteopathic"
-            },
-            {
-                "@type": "MedicalProcedure",
-                "name": "Kopfschmerzen"
-            },
-            {
-                "@type": "MedicalProcedure",
-                "name": "Schwangerenbetreuung"
-            },
-            {
-                "@type": "MedicalProcedure",
-                "name": "Rückenschmerzen"
-            },
-            {
-                "@type": "MedicalProcedure",
-                "name": "Bandscheibenvorfall"
-            },
-            {
-                "@type": "MedicalProcedure",
-                "name": "Halswirbelsäulen-Syndrom (HWS-Syndrom)"
-            },
-            {
-                "@type": "MedicalProcedure",
-                "name": "Karpaltunnelsyndrom"
-            },
-            {
-                "@type": "MedicalProcedure",
-                "name": "Migräne"
-            },
-            {
-                "@type": "MedicalProcedure",
-                "name": "Schulterschmerzen"
-            },
-            {
-                "@type": "MedicalProcedure",
-                "name": "Kiefergelenkbeschwerden / Craniomandibuläre Dysfunktion (CMD)"
-            },
-            {
-                "@type": "MedicalProcedure",
-                "name": "Knieschmerzen"
-            },
-            {
-                "@type": "MedicalProcedure",
-                "name": "Osteopathie für Kinder"
-            },
-            {
-                "@type": "MedicalProcedure",
-                "name": "Osteopathie für Erwachsene"
-            },
-            {
-                "@type": "MedicalProcedure",
-                "name": "Osteopathie für Babys"
-            },
-            {
-                "@type": "MedicalProcedure",
-                "name": "Periodenschmerzen / Dysmenorrhoe"
+                "medicineSystem": "Osteopathie"
             }
         ],
         "address": {
@@ -135,7 +79,10 @@
         "@id": "{{ personId }}",
         "name": "{{ site.data.global.contact.name }}",
         "jobTitle": "Osteopath",
-        "knowsLanguage": ["DE","EN","FR"]
+        "knowsLanguage": ["DE","EN","FR"],
+        "sameAs": [
+            "{{ site.data.global.contact.doctolib }}"
+        ]
     },
     {
         "@context": "http://schema.org",
@@ -173,7 +120,7 @@
         "headline": "{{ page.title }}",
         "description": "{{ currentDescription }}",
         "url": "{{ currentUrl }}",
-        "about": { "@id": "{{ physicianId }}"}
+        "about": { "@id": "{{ osteopathId }}"}
     }
 ]
 </script>

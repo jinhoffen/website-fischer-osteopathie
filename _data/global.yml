@@ -6,7 +6,7 @@ organization:
 contact:
   name: MSc Annika Fischer
   email: info@fischer-osteopathie.de
-  tel: +49 30 20288435
+  tel: +49 69 59775848
   doctolib: https://www.doctolib.de/osteopath/frankfurt-am-main/annika-fischer-frankfurt
 praxis_frankfurt_nordend_ost:
   name: Osteopathie Annika Fischer
@@ -23,7 +23,7 @@ praxis_frankfurt_nordend_ost:
   long: 8.697451611611962
   hours:
     wednesday:
-      start: '08:00'
+      start: '09:00'
       end: '19:00'
 social:
   email: info@fischer-osteopathie.de
