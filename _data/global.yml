@@ -8,6 +8,7 @@ contact:
   email: info@fischer-osteopathie.de
   tel: +49 69 59775848
   doctolib: https://www.doctolib.de/osteopath/frankfurt-am-main/annika-fischer-frankfurt
+  google: https://maps.app.goo.gl/AVfRCaukrvYwEfFj7
 praxis_frankfurt_nordend_ost:
   name: Osteopathie Annika Fischer
   location: Frankfurt am Main - Nordend-Ost
@@ -25,6 +26,3 @@ praxis_frankfurt_nordend_ost:
     wednesday:
       start: '09:00'
       end: '19:00'
-social:
-  email: info@fischer-osteopathie.de
-  google: https://maps.app.goo.gl/2SHntXtxjquYqeKf9

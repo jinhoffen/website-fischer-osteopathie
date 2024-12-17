@@ -1,15 +1,8 @@
 <!-- Footer -->
 <footer id="footer">
     <ul class="icons">
-        {% for socloc in site.data.global.social %}
-        {% if socloc[1] %}
-        {% if socloc[0] == 'email' %}
-        <li><a href="mailto:{{ socloc[1] }}" class="icon-footer icon-envelope" aria-label="Schreibe eine E-Mail"><span class="label">E-mail</span></a></li>
-        {% else %}
-        <li><a target="_blank" rel="noopener" href="{{ socloc[1] }}" class="icon-footer icon-{{ socloc[0] }}" aria-label="Gehe zu {{ socloc[0] | capitalize}}"><span class="label">{{ socloc[0] }}</span></a></li>
-        {% endif %}
-        {% endif %}
-        {% endfor %}
+        <li><a href="mailto:{{ site.data.global.contact.email }}" class="icon-footer icon-envelope" aria-label="Schreiben Sie eine E-Mail"><span class="label">E-mail</span></a></li>
+        <li><a target="_blank" rel="noopener" href="{{ site.data.global.contact.google }}" class="icon-footer icon-google" aria-label="Gehen Sie zu Google"><span class="label">Google</span></a></li>
     </ul>
     <ul class="copyright">
         <li>&copy; {% assign thisyear = site.time | date: "%Y" %}
