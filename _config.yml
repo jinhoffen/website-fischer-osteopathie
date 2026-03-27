@@ -28,7 +28,6 @@ plugins:
   - jekyll_version_plugin
   - jekyll-minifier
   - jekyll-webp
-  - jekyll-last-modified-at
   - jekyll-sitemap
 
 jekyll-minifier:
