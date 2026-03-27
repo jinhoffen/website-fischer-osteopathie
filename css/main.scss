@@ -1406,6 +1406,10 @@ $baseurl: '#{$site_baseurl}/images';
 			@include wrapper(accent7);
 		}
 
+		&.style6 {
+			@include wrapper(accent4);
+		}
+
 		@include breakpoint('<=medium') {
 			@include padding(4em, 3em);
 		}

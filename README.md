@@ -37,9 +37,9 @@ Install [chruby](https://github.com/postmodern/chruby), a version manager tool f
 
     brew install chruby ruby-install xz
 
-Install the latest stable version of Ruby supported by Jekyll (3.1.3 at the time of writing):
+Install the latest stable version of Ruby supported by Jekyll. I successfully tested 3.1.3
 
-    ruby-install ruby 3.2.2
+    ruby-install ruby 3.1.3
 
 Configure your shell to automatically use chruby.
 If you use the default shell, add this to `~/.zshrc`
@@ -50,16 +50,10 @@ echo "source $(brew --prefix)/opt/chruby/share/chruby/auto.sh" >> ~/.zshrc
 echo "chruby ruby-3.1.3" >> ~/.zshrc # run 'chruby' to see actual version
 ```
 
-Install any desired ruby version in chruby, e.g., version 3.0.0
-
-```bash
-ruby-install ruby 3.0.0
-```
-
-and switch to it using 
+Wwitch to it using 
 
 ```
-chruby 2.4.5
+chruby 3.1.3
 ```
 
 Update the gems, the Ruby package manager
@@ -111,7 +105,6 @@ Note that the main branch is protected in GitHub and only allows merges through 
 
 * Spectral Theme (packaged on 2022-03-06) by [HTML5 UP](https://html5up.net/spectral)
 * [Jekyll v4.2.2](https://jekyllrb.com/) with plugins:
-  * [Last-Modified](https://github.com/gjtorikian/jekyll-last-modified-at)
   * [Sitemap](https://github.com/jekyll/jekyll-sitemap)
   * [Version](https://github.com/rob-murray/jekyll-version-plugin)
   * [Minifier](https://github.com/digitalsparky/jekyll-minifier)
