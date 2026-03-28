@@ -694,7 +694,7 @@ $baseurl: '#{$site_baseurl}/images';
 			list-style: none;
 			padding-left: 0;
 
-			li {
+			> li {
 				border-top: solid 1px _palette(border);
 				padding: 0.5em 0;
 
