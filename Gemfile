@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 
 # jekyll
-gem "jekyll", "~> 4.2.2"
+gem "jekyll", "~> 4.4.1"
 
 # see https://github.com/gjtorikian/html-proofer
 gem 'html-proofer'
