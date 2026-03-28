@@ -33,7 +33,7 @@ function initMap() {
     locations.forEach(([position, title], i) => {
         // Configure pin
         const pin = new google.maps.marker.PinElement({
-            glyph: `${i + 1}`,
+            glyphText: `${i + 1}`,
             scale: 1,
         });
 
@@ -42,12 +42,12 @@ function initMap() {
             map,
             position: position,
             title: `${title}`,
-            content: pin.element,
+            content: pin,
             gmpClickable: true,
         });
 
         // Add a click event listener for each marker, and set up the info window.
-        marker.addListener("click", () => {
+        marker.addListener("gmp-click", () => {
             infoWindow.close();
             infoWindow.setContent(marker.title);
             infoWindow.open(marker.map, marker);
